@@ -10,7 +10,7 @@ import Foundation
 extension Note {
     public override func awakeFromInsert() {
         super.awakeFromInsert()
-        self.text = "New Note"
+        self.attributedText = NSAttributedString(string: "New Note")
         self.creationDate = Date()
     }
 }

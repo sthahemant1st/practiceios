@@ -21,6 +21,12 @@
 		41064D2B27BFA312006D260A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D2A27BFA312006D260A /* DataController.swift */; };
 		41064D2E27C23984006D260A /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D2D27C23984006D260A /* Note+Extension.swift */; };
 		41064D3027C23994006D260A /* Notebook+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D2F27C23994006D260A /* Notebook+Extension.swift */; };
+		41064D3327C35E72006D260A /* UpdateToAttributedString.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3227C35E72006D260A /* UpdateToAttributedString.xcmappingmodel */; };
+		41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3427C35F59006D260A /* UpdateToAttributedStringPolicy.swift */; };
+		41064D3727C3715E006D260A /* Pathifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3627C3715E006D260A /* Pathifier.swift */; };
+		41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */; };
+		41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3C27C394C4006D260A /* DesignableUiTextView.swift */; };
+		41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -60,6 +66,13 @@
 		41064D2A27BFA312006D260A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		41064D2D27C23984006D260A /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
 		41064D2F27C23994006D260A /* Notebook+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+Extension.swift"; sourceTree = "<group>"; };
+		41064D3127C35AA9006D260A /* NoteModel 2 attributedString.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NoteModel 2 attributedString.xcdatamodel"; sourceTree = "<group>"; };
+		41064D3227C35E72006D260A /* UpdateToAttributedString.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = UpdateToAttributedString.xcmappingmodel; sourceTree = "<group>"; };
+		41064D3427C35F59006D260A /* UpdateToAttributedStringPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateToAttributedStringPolicy.swift; sourceTree = "<group>"; };
+		41064D3627C3715E006D260A /* Pathifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pathifier.swift; sourceTree = "<group>"; };
+		41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPracticeViewController.swift; sourceTree = "<group>"; };
+		41064D3C27C394C4006D260A /* DesignableUiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUiTextView.swift; sourceTree = "<group>"; };
+		41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricSuccessViewController.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +158,7 @@
 		41064D1F27BE7042006D260A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				41064D3827C39192006D260A /* BiometricPracticeViewController */,
 				41064D2127BE70F2006D260A /* MainViewController */,
 				41064D2027BE707D006D260A /* HeroListViewController */,
 				41A6DAE427BCF9B9003F44CA /* HeroOneViewController */,
@@ -203,6 +217,23 @@
 				41064D2F27C23994006D260A /* Notebook+Extension.swift */,
 			);
 			path = "NSObject Extension";
+			sourceTree = "<group>";
+		};
+		41064D3827C39192006D260A /* BiometricPracticeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */,
+				41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */,
+			);
+			path = BiometricPracticeViewController;
+			sourceTree = "<group>";
+		};
+		41064D3B27C394A2006D260A /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3C27C394C4006D260A /* DesignableUiTextView.swift */,
+			);
+			path = Designables;
 			sourceTree = "<group>";
 		};
 		41A6DAB727BCBB5D003F44CA = {
@@ -303,6 +334,7 @@
 		41A6DAEA27BCFF04003F44CA /* Utitlities */ = {
 			isa = PBXGroup;
 			children = (
+				41064D3B27C394A2006D260A /* Designables */,
 				41064D1227BE6A74006D260A /* Protocol */,
 				41A6DAF227BD0E49003F44CA /* Helper */,
 				41A6DAEB27BCFF15003F44CA /* Extension */,
@@ -386,7 +418,10 @@
 			children = (
 				41064D2C27C23956006D260A /* NSObject Extension */,
 				41064D2727BF952D006D260A /* NoteModel.xcdatamodeld */,
+				41064D3427C35F59006D260A /* UpdateToAttributedStringPolicy.swift */,
 				41064D2A27BFA312006D260A /* DataController.swift */,
+				41064D3227C35E72006D260A /* UpdateToAttributedString.xcmappingmodel */,
+				41064D3627C3715E006D260A /* Pathifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -533,11 +568,14 @@
 				41064D1827BE6E57006D260A /* MainCoordinator.swift in Sources */,
 				41064D0927BE2E2D006D260A /* MainCollectionViewCell.swift in Sources */,
 				41A6DAF127BD002F003F44CA /* AppConstants.swift in Sources */,
+				41064D3727C3715E006D260A /* Pathifier.swift in Sources */,
 				41064D3027C23994006D260A /* Notebook+Extension.swift in Sources */,
 				41064D0D27BE2F1F006D260A /* MainItem.swift in Sources */,
 				41064D2927BF952D006D260A /* NoteModel.xcdatamodeld in Sources */,
+				41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */,
 				41A6DB0627BE1BAF003F44CA /* NotebookListViewController.swift in Sources */,
 				41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */,
+				41064D3327C35E72006D260A /* UpdateToAttributedString.xcmappingmodel in Sources */,
 				41064D1427BE6A87006D260A /* Coordinator.swift in Sources */,
 				41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */,
 				41A6DAF627BD1C34003F44CA /* HeroListViewController.swift in Sources */,
@@ -550,11 +588,14 @@
 				41A6DAFC27BD1DD7003F44CA /* HeroTableViewCell.swift in Sources */,
 				41A6DADA27BCD57D003F44CA /* MainViewController.swift in Sources */,
 				41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */,
+				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
 				41A6DAE627BCF9D1003F44CA /* HeroOneViewController.swift in Sources */,
 				41064D1D27BE6FA6006D260A /* ViewRepo.swift in Sources */,
 				41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */,
 				41064D2327BE714A006D260A /* NoteCoordinator.swift in Sources */,
+				41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */,
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,
+				41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */,
 				41A6DAF427BD0E65003F44CA /* HeroHelper.swift in Sources */,
 				41064D1127BE33A7006D260A /* TableViewCellExtension.swift in Sources */,
 			);
@@ -785,9 +826,10 @@
 		41064D2727BF952D006D260A /* NoteModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				41064D3127C35AA9006D260A /* NoteModel 2 attributedString.xcdatamodel */,
 				41064D2827BF952D006D260A /* NoteModel.xcdatamodel */,
 			);
-			currentVersion = 41064D2827BF952D006D260A /* NoteModel.xcdatamodel */;
+			currentVersion = 41064D3127C35AA9006D260A /* NoteModel 2 attributedString.xcdatamodel */;
 			path = NoteModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

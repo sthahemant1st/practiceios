@@ -62,6 +62,19 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         noteCoordinator.start()
     }
     
+    func showBiometricView() {
+        let biometricVC = ViewRepo.Main.getBiometricPracticeViewController()
+        biometricVC.coordinator = self
+        navigationController.pushViewController(biometricVC, animated: true)
+    }
+    
+    func showBiometricSuccessView() {
+        let vc = ViewRepo.Main.getBiometricSuccessViewController()
+        navigationController.pushViewController(vc, animated: true)
+        //to remove loginscreen from navigation stack
+        navigationController.viewControllers.remove(at: navigationController.viewControllers.count - 2)
+    }
+    
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         guard let fromViewController = navigationController
                 .transitionCoordinator?.viewController(forKey: .from) else { return }

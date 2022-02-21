@@ -92,7 +92,8 @@ extension NoteListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = fetchedRequestController.object(at: indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteListCell", for: indexPath)
-        cell.textLabel?.text = "\(item.text!) (\(item.creationDate!.formatted(date: .complete, time: .omitted)))"
+        cell.textLabel?.attributedText = item.attributedText
+//        "\(item.att!) (\(item.creationDate!.formatted(date: .complete, time: .omitted)))"
         return cell
     }
     
