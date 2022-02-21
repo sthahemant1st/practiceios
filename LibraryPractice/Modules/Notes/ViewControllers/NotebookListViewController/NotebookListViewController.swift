@@ -94,7 +94,6 @@ class NotebookListViewController: UIViewController {
         print(name)
         let notebook = Notebook(context: dataController.viewContext)
         notebook.name = name
-        notebook.date = Date()
         try? dataController.viewContext.save()
     }
     
@@ -119,7 +118,6 @@ extension NotebookListViewController: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "notebookCell", for: indexPath)
         let item = frc.object(at: indexPath)
         cell.textLabel?.text = "\(item.name!) (\(item.notes!.count))"
-//        cell.detailTextLabel?.text = "\(notebookList[indexPath.row].notes.count)"
         return cell
     }
     

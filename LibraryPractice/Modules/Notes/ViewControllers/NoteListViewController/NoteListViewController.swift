@@ -65,8 +65,6 @@ class NoteListViewController: UIViewController {
 
     @IBAction func onAddNoteClick(_ sender: Any) {
         let note = Note(context: dataController.viewContext)
-        note.text = "New Note"
-        note.creationDate = Date()
         note.notebook = notebook
         try? dataController.viewContext.save()
     }
@@ -109,6 +107,14 @@ extension NoteListViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension NoteListViewController: NSFetchedResultsControllerDelegate {
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
+    }
+    
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
         case .insert:
