@@ -12,6 +12,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
+    var dataController: DataController!
     
     required init(navigationController nc: UINavigationController) {
         self.navigationController = nc
@@ -56,6 +57,7 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func showNoteVc() {
         navigationController.delegate = self
         let noteCoordinator = NoteCoordinator(navigationController: navigationController)
+        noteCoordinator.dataController = dataController
         childCoordinators.append(noteCoordinator)
         noteCoordinator.start()
     }

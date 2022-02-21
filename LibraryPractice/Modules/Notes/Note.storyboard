@@ -56,23 +56,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-A9-Llg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAW-f9-0Zf">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mJh-rv-pu2"/>
+                                    <barButtonItem title="Add note" id="YPu-ss-n2t">
+                                        <connections>
+                                            <action selector="onAddNoteClick:" destination="XRA-Zf-mtP" id="ZAW-gN-TeK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Peo-sc-Qdf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Peo-sc-Qdf" firstAttribute="trailing" secondItem="t6a-A9-Llg" secondAttribute="trailing" id="0jU-U1-Ezm"/>
                             <constraint firstItem="t6a-A9-Llg" firstAttribute="leading" secondItem="Peo-sc-Qdf" secondAttribute="leading" id="3B0-4V-cpH"/>
-                            <constraint firstItem="Peo-sc-Qdf" firstAttribute="bottom" secondItem="t6a-A9-Llg" secondAttribute="bottom" id="Dre-9o-NHV"/>
-                            <constraint firstItem="t6a-A9-Llg" firstAttribute="top" secondItem="Peo-sc-Qdf" secondAttribute="top" id="yZv-ZM-gFu"/>
+                            <constraint firstItem="rAW-f9-0Zf" firstAttribute="leading" secondItem="Peo-sc-Qdf" secondAttribute="leading" id="CLF-gx-lVt"/>
+                            <constraint firstItem="rAW-f9-0Zf" firstAttribute="top" secondItem="t6a-A9-Llg" secondAttribute="bottom" id="Tvx-Iw-QKK"/>
+                            <constraint firstItem="rAW-f9-0Zf" firstAttribute="trailing" secondItem="Peo-sc-Qdf" secondAttribute="trailing" id="Wp2-nH-ZvS"/>
+                            <constraint firstItem="rAW-f9-0Zf" firstAttribute="bottom" secondItem="Peo-sc-Qdf" secondAttribute="bottom" id="ZGB-xs-3X1"/>
+                            <constraint firstItem="t6a-A9-Llg" firstAttribute="top" secondItem="Peo-sc-Qdf" secondAttribute="top" id="lcL-rI-h3j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="t6a-A9-Llg" id="gfU-Vj-Dbd"/>
+                        <outlet property="toolBar" destination="rAW-f9-0Zf" id="yg1-lv-5fr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29P-sa-ERq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="76"/>
+            <point key="canvasLocation" x="779.71014492753625" y="75.669642857142847"/>
         </scene>
         <!--Note Details View Controller-->
         <scene sceneID="9RG-sa-A4z">
@@ -81,9 +99,27 @@
                     <view key="view" contentMode="scaleToFill" id="4JU-J8-ShI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-hi-l07">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dWl-7F-a0h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aC3-hi-l07" firstAttribute="top" secondItem="dWl-7F-a0h" secondAttribute="top" id="VqC-Zi-vi4"/>
+                            <constraint firstItem="dWl-7F-a0h" firstAttribute="trailing" secondItem="aC3-hi-l07" secondAttribute="trailing" id="eZa-HQ-iso"/>
+                            <constraint firstItem="aC3-hi-l07" firstAttribute="leading" secondItem="dWl-7F-a0h" secondAttribute="leading" id="hst-D4-r7U"/>
+                            <constraint firstItem="dWl-7F-a0h" firstAttribute="bottom" secondItem="aC3-hi-l07" secondAttribute="bottom" id="ijb-5X-6Ex"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="aC3-hi-l07" id="KKG-zt-eK9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="to9-eH-rJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +127,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
