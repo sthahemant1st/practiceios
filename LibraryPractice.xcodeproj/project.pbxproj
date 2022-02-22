@@ -28,6 +28,12 @@
 		41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3C27C394C4006D260A /* DesignableUiTextView.swift */; };
 		41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */; };
 		41064D4427C4C662006D260A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D4327C4C662006D260A /* Utilities.swift */; };
+		41064D5327C4DFEB006D260A /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D4F27C4DFEB006D260A /* DancingScript-Bold.ttf */; };
+		41064D5427C4DFEB006D260A /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5027C4DFEB006D260A /* DancingScript-Medium.ttf */; };
+		41064D5527C4DFEB006D260A /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5127C4DFEB006D260A /* DancingScript-Regular.ttf */; };
+		41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */; };
+		41064D5827C4F595006D260A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5727C4F595006D260A /* Color.xcassets */; };
+		41064D5A27C4F7C4006D260A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5927C4F7C4006D260A /* Theme.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -75,6 +81,12 @@
 		41064D3C27C394C4006D260A /* DesignableUiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUiTextView.swift; sourceTree = "<group>"; };
 		41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricSuccessViewController.swift; sourceTree = "<group>"; };
 		41064D4327C4C662006D260A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		41064D4F27C4DFEB006D260A /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
+		41064D5027C4DFEB006D260A /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Medium.ttf"; sourceTree = "<group>"; };
+		41064D5127C4DFEB006D260A /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
+		41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
+		41064D5727C4F595006D260A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		41064D5927C4F7C4006D260A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +258,17 @@
 			path = UtilityFunction;
 			sourceTree = "<group>";
 		};
+		41064D4E27C4DFEB006D260A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				41064D5127C4DFEB006D260A /* DancingScript-Regular.ttf */,
+				41064D5027C4DFEB006D260A /* DancingScript-Medium.ttf */,
+				41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */,
+				41064D4F27C4DFEB006D260A /* DancingScript-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		41A6DAB727BCBB5D003F44CA = {
 			isa = PBXGroup;
 			children = (
@@ -399,8 +422,11 @@
 		41A6DAFE27BE1A9D003F44CA /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				41064D4E27C4DFEB006D260A /* Font */,
 				41A6DAEE27BD000B003F44CA /* LottieFiles */,
 				41A6DACC27BCBB5E003F44CA /* Assets.xcassets */,
+				41064D5727C4F595006D260A /* Color.xcassets */,
+				41064D5927C4F7C4006D260A /* Theme.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -516,13 +542,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41064D5427C4DFEB006D260A /* DancingScript-Medium.ttf in Resources */,
 				41A6DAD027BCBB5E003F44CA /* LaunchScreen.storyboard in Resources */,
+				41064D5327C4DFEB006D260A /* DancingScript-Bold.ttf in Resources */,
 				41A6DACD27BCBB5E003F44CA /* Assets.xcassets in Resources */,
 				41A6DB0127BE1B0F003F44CA /* Note.storyboard in Resources */,
+				41064D5827C4F595006D260A /* Color.xcassets in Resources */,
 				41A6DAFD27BD1DD7003F44CA /* HeroTableViewCell.xib in Resources */,
 				41A6DAE327BCE21C003F44CA /* lottieA.json in Resources */,
 				41064D0A27BE2E2D006D260A /* MainCollectionViewCell.xib in Resources */,
 				41A6DACB27BCBB5D003F44CA /* Main.storyboard in Resources */,
+				41064D5527C4DFEB006D260A /* DancingScript-Regular.ttf in Resources */,
+				41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +615,7 @@
 				41064D0D27BE2F1F006D260A /* MainItem.swift in Sources */,
 				41064D2927BF952D006D260A /* NoteModel.xcdatamodeld in Sources */,
 				41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */,
+				41064D5A27C4F7C4006D260A /* Theme.swift in Sources */,
 				41A6DB0627BE1BAF003F44CA /* NotebookListViewController.swift in Sources */,
 				41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */,
 				41064D3327C35E72006D260A /* UpdateToAttributedString.xcmappingmodel in Sources */,
@@ -763,6 +795,8 @@
 				DEVELOPMENT_TEAM = BQ4NDB8PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LibraryPractice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Practice Ios";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Used for authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -793,6 +827,8 @@
 				DEVELOPMENT_TEAM = BQ4NDB8PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LibraryPractice/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Practice Ios";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Used for authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

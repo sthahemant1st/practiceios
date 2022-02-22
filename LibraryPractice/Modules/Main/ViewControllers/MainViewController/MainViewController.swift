@@ -37,11 +37,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Practice Project"
+        
         initCollectionView()
     }
     
     private func initCollectionView() {
-        print(MainCollectionViewCell.identifier)
         let layout = UICollectionViewFlowLayout()
         
         layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
