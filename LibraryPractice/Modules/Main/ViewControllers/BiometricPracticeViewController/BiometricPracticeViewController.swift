@@ -7,18 +7,39 @@
 
 import UIKit
 import LocalAuthentication
+import KeychainSwift
 
 class BiometricPracticeViewController: UIViewController {
 
     weak var coordinator: MainCoordinator?
     @IBOutlet weak var useBiometricBtn: UIButton!
+    @IBOutlet weak var userNameTextField: LeftViewUITextField!
+    @IBOutlet weak var passwordTextField: LeftViewUITextField!
+    let keyChain = KeychainSwift(keyPrefix: AppConstants.KeyChain.prefix)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         useBiometricBtn.layer.cornerRadius = 8
         useBiometricBtn.layer.borderWidth = 1
         useBiometricBtn.layer.borderColor = UIColor.systemGray4.cgColor
+        passwordTextField.isSecureTextEntry = true
 
+    }
+    
+    @IBAction func onLoginClick(_ sender: Any) {
+        if let userName = userNameTextField.text {
+            keyChain.set(userName,
+                         forKey: AppConstants.KeyChain.username,
+                         withAccess: .accessibleWhenUnlocked)
+        }
+        if let password = passwordTextField.text {
+            keyChain.set(password,
+                         forKey: AppConstants.KeyChain.password,
+                         withAccess: .accessibleWhenUnlocked)
+        }
+        userNameTextField.text = ""
+        userNameTextField.text = ""
+        showAlertWithOk(withMessage: "Username and password saved in keychain")
     }
     
     @IBAction func onBiometricBtnClick(_ sender: Any) {

@@ -1,24 +1,28 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
   - Hero (1.6.1)
+  - KeychainSwift (20.0.0)
   - lottie-ios (3.3.0)
 
 DEPENDENCIES:
   - DZNEmptyDataSet
   - Hero
+  - KeychainSwift (~> 20.0)
   - lottie-ios
 
 SPEC REPOS:
   trunk:
     - DZNEmptyDataSet
     - Hero
+    - KeychainSwift
     - lottie-ios
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
 
-PODFILE CHECKSUM: ac4b08779c0f05a0a96b6e512c47c8c85c19ef3a
+PODFILE CHECKSUM: e6a0f20f2fc6cb0b9244464ec1786aebc14fd458
 
 COCOAPODS: 1.11.2

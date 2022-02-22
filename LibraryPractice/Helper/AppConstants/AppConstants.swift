@@ -19,4 +19,10 @@ struct AppConstants {
         static let notebookCache = "NotebookCache"
         static let noteCache = "NoteCache"
     }
+    
+    struct KeyChain {
+        static let prefix = "prefix"
+        static let username = "username"
+        static let password = "password"
+    }
 }

@@ -9,4 +9,5 @@ target 'LibraryPractice' do
   pod 'DZNEmptyDataSet'
   pod 'lottie-ios'
   pod 'Hero'
+  pod 'KeychainSwift', '~> 20.0'
 end

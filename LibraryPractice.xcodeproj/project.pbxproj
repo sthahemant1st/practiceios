@@ -27,6 +27,7 @@
 		41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */; };
 		41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3C27C394C4006D260A /* DesignableUiTextView.swift */; };
 		41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */; };
+		41064D4427C4C662006D260A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D4327C4C662006D260A /* Utilities.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -73,6 +74,7 @@
 		41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPracticeViewController.swift; sourceTree = "<group>"; };
 		41064D3C27C394C4006D260A /* DesignableUiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUiTextView.swift; sourceTree = "<group>"; };
 		41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricSuccessViewController.swift; sourceTree = "<group>"; };
+		41064D4327C4C662006D260A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +238,14 @@
 			path = Designables;
 			sourceTree = "<group>";
 		};
+		41064D4227C4C63E006D260A /* UtilityFunction */ = {
+			isa = PBXGroup;
+			children = (
+				41064D4327C4C662006D260A /* Utilities.swift */,
+			);
+			path = UtilityFunction;
+			sourceTree = "<group>";
+		};
 		41A6DAB727BCBB5D003F44CA = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +344,7 @@
 		41A6DAEA27BCFF04003F44CA /* Utitlities */ = {
 			isa = PBXGroup;
 			children = (
+				41064D4227C4C63E006D260A /* UtilityFunction */,
 				41064D3B27C394A2006D260A /* Designables */,
 				41064D1227BE6A74006D260A /* Protocol */,
 				41A6DAF227BD0E49003F44CA /* Helper */,
@@ -587,6 +598,7 @@
 				41A6DB0827BE1BBB003F44CA /* NoteListViewController.swift in Sources */,
 				41A6DAFC27BD1DD7003F44CA /* HeroTableViewCell.swift in Sources */,
 				41A6DADA27BCD57D003F44CA /* MainViewController.swift in Sources */,
+				41064D4427C4C662006D260A /* Utilities.swift in Sources */,
 				41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */,
 				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
 				41A6DAE627BCF9D1003F44CA /* HeroOneViewController.swift in Sources */,

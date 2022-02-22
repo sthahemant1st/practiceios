@@ -232,7 +232,7 @@
                                     <constraint firstAttribute="height" constant="45" id="fXj-sd-Vdm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="person.fill" catalog="system"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -261,8 +261,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="onLoginClick:" destination="txg-RG-IFv" eventType="touchUpInside" id="0if-QG-jhh"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Username or Password ?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-4l-dtk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login click will save username and password in keychain" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-4l-dtk">
                                 <rect key="frame" x="16" y="360" width="382" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -373,7 +376,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTextField" destination="rE9-HV-3Cf" id="glD-uQ-h7K"/>
                         <outlet property="useBiometricBtn" destination="GEc-hM-qp2" id="bt9-Kz-nlx"/>
+                        <outlet property="userNameTextField" destination="yY2-Qs-zI5" id="jnX-l6-3Bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rge-yn-bzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -394,9 +399,33 @@
                                     <constraint firstAttribute="width" secondItem="p5d-YT-Dbg" secondAttribute="height" multiplier="1:1" id="UTd-ib-pMp"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Sucess" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-Ys-1Bd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keychain Saved Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGT-Ys-1Bd">
                                 <rect key="frame" x="16" y="492" width="382" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uh-aW-gdn">
+                                <rect key="frame" x="16" y="529" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq3-fD-7gw">
+                                <rect key="frame" x="16" y="558" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajT-I8-m8i">
+                                <rect key="frame" x="107" y="529" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6H-Vl-ea2">
+                                <rect key="frame" x="107" y="558" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -405,13 +434,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="p5d-YT-Dbg" firstAttribute="top" secondItem="mKY-mf-4vE" secondAttribute="top" constant="50" id="85F-rL-aWC"/>
+                            <constraint firstItem="3uh-aW-gdn" firstAttribute="leading" secondItem="mKY-mf-4vE" secondAttribute="leading" constant="16" id="BI7-KK-HTU"/>
+                            <constraint firstItem="ajT-I8-m8i" firstAttribute="top" secondItem="WGT-Ys-1Bd" secondAttribute="bottom" constant="8" symbolic="YES" id="Lbt-jj-8NA"/>
                             <constraint firstItem="mKY-mf-4vE" firstAttribute="trailing" secondItem="WGT-Ys-1Bd" secondAttribute="trailing" constant="16" id="OKV-bX-2Jv"/>
+                            <constraint firstItem="G6H-Vl-ea2" firstAttribute="top" secondItem="ajT-I8-m8i" secondAttribute="bottom" constant="8" symbolic="YES" id="Tey-lz-H8A"/>
                             <constraint firstItem="mKY-mf-4vE" firstAttribute="trailing" secondItem="p5d-YT-Dbg" secondAttribute="trailing" constant="16" id="bC4-pn-sKH"/>
                             <constraint firstItem="WGT-Ys-1Bd" firstAttribute="top" secondItem="p5d-YT-Dbg" secondAttribute="bottom" constant="16" id="cM5-dL-9UE"/>
+                            <constraint firstItem="gq3-fD-7gw" firstAttribute="top" secondItem="3uh-aW-gdn" secondAttribute="bottom" constant="8" symbolic="YES" id="dEX-ZE-Wjb"/>
                             <constraint firstItem="p5d-YT-Dbg" firstAttribute="leading" secondItem="mKY-mf-4vE" secondAttribute="leading" constant="16" id="dZq-tp-a5Q"/>
+                            <constraint firstItem="ajT-I8-m8i" firstAttribute="leading" secondItem="3uh-aW-gdn" secondAttribute="trailing" constant="8" symbolic="YES" id="f1h-iV-sJs"/>
+                            <constraint firstItem="G6H-Vl-ea2" firstAttribute="leading" secondItem="gq3-fD-7gw" secondAttribute="trailing" constant="13" id="fWz-ll-WUu"/>
+                            <constraint firstItem="gq3-fD-7gw" firstAttribute="leading" secondItem="mKY-mf-4vE" secondAttribute="leading" constant="16" id="geN-Vp-30m"/>
+                            <constraint firstItem="3uh-aW-gdn" firstAttribute="top" secondItem="WGT-Ys-1Bd" secondAttribute="bottom" constant="8" symbolic="YES" id="nVP-SC-lmF"/>
                             <constraint firstItem="WGT-Ys-1Bd" firstAttribute="leading" secondItem="mKY-mf-4vE" secondAttribute="leading" constant="16" id="rtq-nj-jb1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="G6H-Vl-ea2" id="bMO-Hf-kEd"/>
+                        <outlet property="usernameLabel" destination="ajT-I8-m8i" id="BZA-Ec-GBf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSx-7r-l7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -450,11 +491,10 @@
     </scenes>
     <designables>
         <designable name="rE9-HV-3Cf">
-            <size key="intrinsicContentSize" width="115.5" height="34"/>
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
         </designable>
-        <designable name="uGs-6d-1md"/>
         <designable name="yY2-Qs-zI5">
-            <size key="intrinsicContentSize" width="122" height="34"/>
+            <size key="intrinsicContentSize" width="94" height="34"/>
         </designable>
     </designables>
     <resources>
