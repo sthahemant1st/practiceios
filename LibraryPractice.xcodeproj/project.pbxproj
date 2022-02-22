@@ -172,8 +172,8 @@
 		41064D1F27BE7042006D260A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				41064D3827C39192006D260A /* BiometricPracticeViewController */,
 				41064D2127BE70F2006D260A /* MainViewController */,
+				41064D3827C39192006D260A /* BiometricPracticeViewController */,
 				41064D2027BE707D006D260A /* HeroListViewController */,
 				41A6DAE427BCF9B9003F44CA /* HeroOneViewController */,
 				41A6DADE27BCD630003F44CA /* EmptyTableViewController */,
