@@ -12,6 +12,9 @@ class MainViewController: UIViewController {
      weak var coordinator: MainCoordinator?
     
     private let mainItems = [
+        MainItem(imageName: "instakilo",
+                 title: "Instakilo",
+                 identifier: InstakiloMainController.identifier),
         MainItem(imageName: "empty",
                  title: "Empty Table View",
                  identifier: EmptyTableViewController.identifier),
@@ -79,6 +82,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let item = mainItems[indexPath.row]
         
         switch item.identifier {
+        case InstakiloMainController.identifier:
+            coordinator?.showInstakiloView()
         case EmptyTableViewController.identifier:
             coordinator?.showEmptyTableView()
         case LottieViewController.identifier:

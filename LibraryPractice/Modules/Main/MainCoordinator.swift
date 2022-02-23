@@ -30,6 +30,12 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(emptyTableVC, animated: true)
     }
     
+    func showInstakiloView() {
+        let instakiloCoordinator = InstakiloCoordinator(navigationController: navigationController)
+        instakiloCoordinator.start()
+        childCoordinators.append(instakiloCoordinator)
+    }
+    
     func showLottieView() {
         let lottieVC = ViewRepo.Main.getLottieViewController()
         lottieVC.coordinator = self

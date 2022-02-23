@@ -66,4 +66,41 @@ struct ViewRepo {
             return noteDetailsVC
         }
     }
+    
+    struct Instakilo {
+        static func getInstakiloMainController() -> InstakiloMainController {
+            let vc = Storyboard.instakilo.viewController(InstakiloMainController.self)
+            return vc
+        }
+        
+        static func getInstaHomeViewController() -> InstaHomeViewController {
+            let vc = Storyboard.instakilo.viewController(InstaHomeViewController.self)
+            return vc
+        }
+        
+        static func getInstaSearchViewController() -> InstaSearchViewController {
+            let vc = Storyboard.instakilo.viewController(InstaSearchViewController.self)
+            return vc
+        }
+        
+        static func getInstaAddPostViewController() -> InstaAddPostViewController {
+            let vc = Storyboard.instakilo.viewController(InstaAddPostViewController.self)
+            return vc
+        }
+        
+        static func getInstaShopViewController() -> InstaShopViewController {
+            let vc = Storyboard.instakilo.viewController(InstaShopViewController.self)
+            return vc
+        }
+        
+        static func getInstaProfileViewController() -> InstaProfileViewController {
+            let vc = Storyboard.instakilo.viewController(InstaProfileViewController.self)
+            return vc
+        }
+        
+        static func getInstaPostListViewController() -> InstaPostListViewController {
+            let vc = Storyboard.instakilo.viewController(InstaPostListViewController.self)
+            return vc
+        }
+    }
 }

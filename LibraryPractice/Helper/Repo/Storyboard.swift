@@ -11,6 +11,7 @@ import UIKit
 enum Storyboard: String {
     case main = "Main"
     case note = "Note"
+    case instakilo = "Instakilo"
     
     private var name: String {
         return self.rawValue

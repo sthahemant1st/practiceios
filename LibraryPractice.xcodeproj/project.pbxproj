@@ -34,6 +34,20 @@
 		41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */; };
 		41064D5827C4F595006D260A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5727C4F595006D260A /* Color.xcassets */; };
 		41064D5A27C4F7C4006D260A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5927C4F7C4006D260A /* Theme.swift */; };
+		41064D5D27C53449006D260A /* Instakilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5C27C53449006D260A /* Instakilo.storyboard */; };
+		41064D5F27C53469006D260A /* InstakiloCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5E27C53469006D260A /* InstakiloCoordinator.swift */; };
+		41064D6727C53F4C006D260A /* InstakiloMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */; };
+		41064D6927C5EF51006D260A /* InstaHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6827C5EF51006D260A /* InstaHomeViewController.swift */; };
+		41064D6D27C5EFB9006D260A /* InstaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */; };
+		41064D7027C5EFE2006D260A /* InstaAddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */; };
+		41064D7327C5F003006D260A /* InstaShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7227C5F003006D260A /* InstaShopViewController.swift */; };
+		41064D7727C5F02E006D260A /* InstaProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7627C5F02E006D260A /* InstaProfileViewController.swift */; };
+		41064D7A27C5F0DC006D260A /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7927C5F0DC006D260A /* HomeCoordinator.swift */; };
+		41064D7C27C5F0F0006D260A /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7B27C5F0F0006D260A /* SearchCoordinator.swift */; };
+		41064D7E27C5F0FD006D260A /* ShopCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7D27C5F0FD006D260A /* ShopCoordinator.swift */; };
+		41064D8027C5F124006D260A /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7F27C5F124006D260A /* ProfileCoordinator.swift */; };
+		41064D8227C5F160006D260A /* AddPostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D8127C5F160006D260A /* AddPostCoordinator.swift */; };
+		41064D8C27C61A23006D260A /* InstaPostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D8B27C61A23006D260A /* InstaPostListViewController.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -87,6 +101,20 @@
 		41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
 		41064D5727C4F595006D260A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		41064D5927C4F7C4006D260A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		41064D5C27C53449006D260A /* Instakilo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instakilo.storyboard; sourceTree = "<group>"; };
+		41064D5E27C53469006D260A /* InstakiloCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstakiloCoordinator.swift; sourceTree = "<group>"; };
+		41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstakiloMainTabBarController.swift; sourceTree = "<group>"; };
+		41064D6827C5EF51006D260A /* InstaHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHomeViewController.swift; sourceTree = "<group>"; };
+		41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSearchViewController.swift; sourceTree = "<group>"; };
+		41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAddPostViewController.swift; sourceTree = "<group>"; };
+		41064D7227C5F003006D260A /* InstaShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaShopViewController.swift; sourceTree = "<group>"; };
+		41064D7627C5F02E006D260A /* InstaProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaProfileViewController.swift; sourceTree = "<group>"; };
+		41064D7927C5F0DC006D260A /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		41064D7B27C5F0F0006D260A /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		41064D7D27C5F0FD006D260A /* ShopCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCoordinator.swift; sourceTree = "<group>"; };
+		41064D7F27C5F124006D260A /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		41064D8127C5F160006D260A /* AddPostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostCoordinator.swift; sourceTree = "<group>"; };
+		41064D8B27C61A23006D260A /* InstaPostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPostListViewController.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +297,123 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		41064D5B27C5340E006D260A /* Instakilo */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8927C619D6006D260A /* InstaPostList */,
+				41064D7427C5F00A006D260A /* InstaProfile */,
+				41064D7127C5EFE7006D260A /* InstaShop */,
+				41064D6E27C5EFBF006D260A /* InstaAddPost */,
+				41064D6B27C5EF8C006D260A /* InstaSearch */,
+				41064D6A27C5EF57006D260A /* InstaHome */,
+				41064D5C27C53449006D260A /* Instakilo.storyboard */,
+				41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */,
+				41064D5E27C53469006D260A /* InstakiloCoordinator.swift */,
+			);
+			path = Instakilo;
+			sourceTree = "<group>";
+		};
+		41064D6A27C5EF57006D260A /* InstaHome */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8827C619BD006D260A /* ViewController */,
+				41064D6827C5EF51006D260A /* InstaHomeViewController.swift */,
+			);
+			path = InstaHome;
+			sourceTree = "<group>";
+		};
+		41064D6B27C5EF8C006D260A /* InstaSearch */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8727C6195D006D260A /* ViewController */,
+				41064D7B27C5F0F0006D260A /* SearchCoordinator.swift */,
+			);
+			path = InstaSearch;
+			sourceTree = "<group>";
+		};
+		41064D6E27C5EFBF006D260A /* InstaAddPost */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8627C6194E006D260A /* ViewController */,
+				41064D8127C5F160006D260A /* AddPostCoordinator.swift */,
+			);
+			path = InstaAddPost;
+			sourceTree = "<group>";
+		};
+		41064D7127C5EFE7006D260A /* InstaShop */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8527C61931006D260A /* ViewController */,
+				41064D7D27C5F0FD006D260A /* ShopCoordinator.swift */,
+			);
+			path = InstaShop;
+			sourceTree = "<group>";
+		};
+		41064D7427C5F00A006D260A /* InstaProfile */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8427C6190A006D260A /* ViewController */,
+				41064D7F27C5F124006D260A /* ProfileCoordinator.swift */,
+			);
+			path = InstaProfile;
+			sourceTree = "<group>";
+		};
+		41064D8427C6190A006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D7627C5F02E006D260A /* InstaProfileViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8527C61931006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D7227C5F003006D260A /* InstaShopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8627C6194E006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8727C6195D006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8827C619BD006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D7927C5F0DC006D260A /* HomeCoordinator.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8927C619D6006D260A /* InstaPostList */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8A27C619FA006D260A /* ViewController */,
+			);
+			path = InstaPostList;
+			sourceTree = "<group>";
+		};
+		41064D8A27C619FA006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8B27C61A23006D260A /* InstaPostListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41A6DAB727BCBB5D003F44CA = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +449,7 @@
 		41A6DAD727BCD551003F44CA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41064D5B27C5340E006D260A /* Instakilo */,
 				41A6DB0227BE1B49003F44CA /* Notes */,
 				41A6DAD827BCD55E003F44CA /* Main */,
 			);
@@ -550,6 +696,7 @@
 				41064D5827C4F595006D260A /* Color.xcassets in Resources */,
 				41A6DAFD27BD1DD7003F44CA /* HeroTableViewCell.xib in Resources */,
 				41A6DAE327BCE21C003F44CA /* lottieA.json in Resources */,
+				41064D5D27C53449006D260A /* Instakilo.storyboard in Resources */,
 				41064D0A27BE2E2D006D260A /* MainCollectionViewCell.xib in Resources */,
 				41A6DACB27BCBB5D003F44CA /* Main.storyboard in Resources */,
 				41064D5527C4DFEB006D260A /* DancingScript-Regular.ttf in Resources */,
@@ -609,10 +756,13 @@
 				41A6DADD27BCD5A5003F44CA /* LottieViewController.swift in Sources */,
 				41064D1827BE6E57006D260A /* MainCoordinator.swift in Sources */,
 				41064D0927BE2E2D006D260A /* MainCollectionViewCell.swift in Sources */,
+				41064D7727C5F02E006D260A /* InstaProfileViewController.swift in Sources */,
 				41A6DAF127BD002F003F44CA /* AppConstants.swift in Sources */,
 				41064D3727C3715E006D260A /* Pathifier.swift in Sources */,
+				41064D8227C5F160006D260A /* AddPostCoordinator.swift in Sources */,
 				41064D3027C23994006D260A /* Notebook+Extension.swift in Sources */,
 				41064D0D27BE2F1F006D260A /* MainItem.swift in Sources */,
+				41064D7027C5EFE2006D260A /* InstaAddPostViewController.swift in Sources */,
 				41064D2927BF952D006D260A /* NoteModel.xcdatamodeld in Sources */,
 				41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */,
 				41064D5A27C4F7C4006D260A /* Theme.swift in Sources */,
@@ -622,20 +772,30 @@
 				41064D1427BE6A87006D260A /* Coordinator.swift in Sources */,
 				41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */,
 				41A6DAF627BD1C34003F44CA /* HeroListViewController.swift in Sources */,
+				41064D6727C53F4C006D260A /* InstakiloMainTabBarController.swift in Sources */,
 				41064D2E27C23984006D260A /* Note+Extension.swift in Sources */,
 				41064D2B27BFA312006D260A /* DataController.swift in Sources */,
+				41064D7A27C5F0DC006D260A /* HomeCoordinator.swift in Sources */,
 				41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */,
 				41A6DAED27BCFF2C003F44CA /* ViewControllerExtension.swift in Sources */,
 				41A6DB0A27BE1BCD003F44CA /* NoteDetailsViewController.swift in Sources */,
 				41A6DB0827BE1BBB003F44CA /* NoteListViewController.swift in Sources */,
+				41064D8C27C61A23006D260A /* InstaPostListViewController.swift in Sources */,
+				41064D7E27C5F0FD006D260A /* ShopCoordinator.swift in Sources */,
+				41064D8027C5F124006D260A /* ProfileCoordinator.swift in Sources */,
 				41A6DAFC27BD1DD7003F44CA /* HeroTableViewCell.swift in Sources */,
 				41A6DADA27BCD57D003F44CA /* MainViewController.swift in Sources */,
 				41064D4427C4C662006D260A /* Utilities.swift in Sources */,
+				41064D6927C5EF51006D260A /* InstaHomeViewController.swift in Sources */,
 				41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */,
+				41064D7C27C5F0F0006D260A /* SearchCoordinator.swift in Sources */,
 				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
 				41A6DAE627BCF9D1003F44CA /* HeroOneViewController.swift in Sources */,
+				41064D6D27C5EFB9006D260A /* InstaSearchViewController.swift in Sources */,
+				41064D7327C5F003006D260A /* InstaShopViewController.swift in Sources */,
 				41064D1D27BE6FA6006D260A /* ViewRepo.swift in Sources */,
 				41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */,
+				41064D5F27C53469006D260A /* InstakiloCoordinator.swift in Sources */,
 				41064D2327BE714A006D260A /* NoteCoordinator.swift in Sources */,
 				41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */,
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,
