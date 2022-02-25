@@ -75,6 +75,12 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.viewControllers.remove(at: navigationController.viewControllers.count - 2)
     }
     
+    func showCGPractiveView() {
+        let vc = ViewRepo.Main.getCGPracticeViewController()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         guard let fromViewController = navigationController
                 .transitionCoordinator?.viewController(forKey: .from) else { return }

@@ -29,7 +29,10 @@ class MainViewController: UIViewController {
                  identifier: NotebookListViewController.identifier),
         MainItem(imageName: "biometric",
                  title: "Biometric Authentication",
-                 identifier: BiometricPracticeViewController.identifier)
+                 identifier: BiometricPracticeViewController.identifier),
+        MainItem(imageName: "biometric",
+                 title: "Core Graphics Practice",
+                 identifier: CGPracticeViewController.identifier)
     ]
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -91,6 +94,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             coordinator?.showNoteVc()
         case BiometricPracticeViewController.identifier:
             coordinator?.showBiometricView()
+        case CGPracticeViewController.identifier:
+            coordinator?.showCGPractiveView()
         default:
             print("identifier not handled")
         }

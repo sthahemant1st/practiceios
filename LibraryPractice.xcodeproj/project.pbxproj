@@ -34,6 +34,7 @@
 		41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */; };
 		41064D5827C4F595006D260A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5727C4F595006D260A /* Color.xcassets */; };
 		41064D5A27C4F7C4006D260A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5927C4F7C4006D260A /* Theme.swift */; };
+		41064DA927C89354006D260A /* CGPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DA827C89354006D260A /* CGPracticeViewController.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -87,6 +88,7 @@
 		41064D5227C4DFEB006D260A /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
 		41064D5727C4F595006D260A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		41064D5927C4F7C4006D260A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		41064DA827C89354006D260A /* CGPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPracticeViewController.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,35 +171,12 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
-		41064D1F27BE7042006D260A /* ViewControllers */ = {
+		41064D2027BE707D006D260A /* HeroList */ = {
 			isa = PBXGroup;
 			children = (
-				41064D2127BE70F2006D260A /* MainViewController */,
-				41064D3827C39192006D260A /* BiometricPracticeViewController */,
-				41064D2027BE707D006D260A /* HeroListViewController */,
-				41A6DAE427BCF9B9003F44CA /* HeroOneViewController */,
-				41A6DADE27BCD630003F44CA /* EmptyTableViewController */,
-				41A6DADB27BCD585003F44CA /* LottieViewController */,
+				41064DA027C8926A006D260A /* ViewController */,
 			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		41064D2027BE707D006D260A /* HeroListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */,
-			);
-			path = HeroListViewController;
-			sourceTree = "<group>";
-		};
-		41064D2127BE70F2006D260A /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D0627BE2E02006D260A /* Views */,
-				41064D0B27BE2F0D006D260A /* Model */,
-				41A6DAD927BCD57D003F44CA /* MainViewController.swift */,
-			);
-			path = MainViewController;
+			path = HeroList;
 			sourceTree = "<group>";
 		};
 		41064D2427BE7163006D260A /* NotebookListViewController */ = {
@@ -233,13 +212,12 @@
 			path = "NSObject Extension";
 			sourceTree = "<group>";
 		};
-		41064D3827C39192006D260A /* BiometricPracticeViewController */ = {
+		41064D3827C39192006D260A /* BiometricPractice */ = {
 			isa = PBXGroup;
 			children = (
-				41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */,
-				41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */,
+				41064D9D27C89221006D260A /* ViewController */,
 			);
-			path = BiometricPracticeViewController;
+			path = BiometricPractice;
 			sourceTree = "<group>";
 		};
 		41064D3B27C394A2006D260A /* Designables */ = {
@@ -267,6 +245,113 @@
 				41064D4F27C4DFEB006D260A /* DancingScript-Bold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		41064D9B27C891DA006D260A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				41064D0B27BE2F0D006D260A /* Model */,
+				41064D0627BE2E02006D260A /* Views */,
+				41064D9C27C891EE006D260A /* ViewController */,
+				41064D1727BE6E57006D260A /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		41064D9C27C891EE006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAD927BCD57D003F44CA /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D9D27C89221006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D9E27C8923A006D260A /* BiometricSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				41064D9F27C8924B006D260A /* ViewController */,
+			);
+			path = BiometricSuccess;
+			sourceTree = "<group>";
+		};
+		41064D9F27C8924B006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA027C8926A006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA127C8928B006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA227C892A2006D260A /* HeroTwo */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA327C892A8006D260A /* ViewController */,
+				41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */,
+			);
+			path = HeroTwo;
+			sourceTree = "<group>";
+		};
+		41064DA327C892A8006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA427C892D2006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA527C892F0006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DADC27BCD5A5003F44CA /* LottieViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA627C8930C006D260A /* CoreGraphicPractice */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA727C8933E006D260A /* ViewController */,
+			);
+			path = CoreGraphicPractice;
+			sourceTree = "<group>";
+		};
+		41064DA727C8933E006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA827C89354006D260A /* CGPracticeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		41A6DAB727BCBB5D003F44CA = {
@@ -313,27 +398,34 @@
 		41A6DAD827BCD55E003F44CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				41064D1F27BE7042006D260A /* ViewControllers */,
-				41064D1727BE6E57006D260A /* MainCoordinator.swift */,
+				41064D9B27C891DA006D260A /* Main */,
+				41064DA627C8930C006D260A /* CoreGraphicPractice */,
+				41064D3827C39192006D260A /* BiometricPractice */,
+				41064D9E27C8923A006D260A /* BiometricSuccess */,
+				41064D2027BE707D006D260A /* HeroList */,
+				41A6DAE427BCF9B9003F44CA /* HeroOne */,
+				41064DA227C892A2006D260A /* HeroTwo */,
+				41A6DADE27BCD630003F44CA /* EmptyTable */,
+				41A6DADB27BCD585003F44CA /* Lottie */,
 				41A6DAC927BCBB5D003F44CA /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		41A6DADB27BCD585003F44CA /* LottieViewController */ = {
+		41A6DADB27BCD585003F44CA /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				41A6DADC27BCD5A5003F44CA /* LottieViewController.swift */,
+				41064DA527C892F0006D260A /* ViewController */,
 			);
-			path = LottieViewController;
+			path = Lottie;
 			sourceTree = "<group>";
 		};
-		41A6DADE27BCD630003F44CA /* EmptyTableViewController */ = {
+		41A6DADE27BCD630003F44CA /* EmptyTable */ = {
 			isa = PBXGroup;
 			children = (
-				41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */,
+				41064DA427C892D2006D260A /* ViewController */,
 			);
-			path = EmptyTableViewController;
+			path = EmptyTable;
 			sourceTree = "<group>";
 		};
 		41A6DAE127BCD686003F44CA /* AppDelegates */ = {
@@ -345,14 +437,13 @@
 			path = AppDelegates;
 			sourceTree = "<group>";
 		};
-		41A6DAE427BCF9B9003F44CA /* HeroOneViewController */ = {
+		41A6DAE427BCF9B9003F44CA /* HeroOne */ = {
 			isa = PBXGroup;
 			children = (
 				41A6DAF727BD1D9D003F44CA /* CutomViews */,
-				41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */,
-				41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */,
+				41064DA127C8928B006D260A /* ViewController */,
 			);
-			path = HeroOneViewController;
+			path = HeroOne;
 			sourceTree = "<group>";
 		};
 		41A6DAE927BCFE6D003F44CA /* Helper */ = {
@@ -627,6 +718,7 @@
 				41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */,
 				41A6DAED27BCFF2C003F44CA /* ViewControllerExtension.swift in Sources */,
 				41A6DB0A27BE1BCD003F44CA /* NoteDetailsViewController.swift in Sources */,
+				41064DA927C89354006D260A /* CGPracticeViewController.swift in Sources */,
 				41A6DB0827BE1BBB003F44CA /* NoteListViewController.swift in Sources */,
 				41A6DAFC27BD1DD7003F44CA /* HeroTableViewCell.swift in Sources */,
 				41A6DADA27BCD57D003F44CA /* MainViewController.swift in Sources */,
