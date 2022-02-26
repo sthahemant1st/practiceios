@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Instakilo Main Controller-->
+        <!--Insta Main Tab Controller-->
         <scene sceneID="ov4-Yf-3FX">
             <objects>
-                <tabBarController storyboardIdentifier="InstakiloMainController" id="tvJ-wz-CBX" customClass="InstakiloMainController" customModule="LibraryPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="InstaMainTabController" id="tvJ-wz-CBX" customClass="InstaMainTabController" customModule="LibraryPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WE7-ie-phn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -7,8 +7,8 @@
 
 import UIKit
 
-class InstakiloMainController: UITabBarController, UITabBarControllerDelegate {
-    weak var coordinator: InstakiloCoordinator!
+class InstaMainTabController: UITabBarController, UITabBarControllerDelegate {
+    weak var coordinator: InstaCoordinator!
     var homeCoordinator: HomeCoordinator!
     var searchCoordinator: SearchCoordinator!
     var addPostCoordinator: AddPostCoordinator!

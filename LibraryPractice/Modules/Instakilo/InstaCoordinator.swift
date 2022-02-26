@@ -1,5 +1,5 @@
 //
-//  InstakiloCoordinator.swift
+//  InstaCoordinator.swift
 //  LibraryPractice
 //
 //  Created by Hemant Shrestha on 22/02/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InstakiloCoordinator: Coordinator {
+class InstaCoordinator: Coordinator {
     var childCoordinators: [Coordinator]
     
     var navigationController: UINavigationController
@@ -18,7 +18,7 @@ class InstakiloCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = ViewRepo.Instakilo.getInstakiloMainController()
+        let vc = ViewRepo.Instakilo.getInstaMainTabController()
         vc.coordinator = self
         
         let addPostCoordinator = AddPostCoordinator(navigationController: UINavigationController())

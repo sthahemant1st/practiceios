@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     private let mainItems = [
         MainItem(imageName: "instakilo",
                  title: "Instakilo",
-                 identifier: InstakiloMainController.identifier),
+                 identifier: InstaMainTabController.identifier),
         MainItem(imageName: "empty",
                  title: "Empty Table View",
                  identifier: EmptyTableViewController.identifier),
@@ -88,7 +88,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let item = mainItems[indexPath.row]
         
         switch item.identifier {
-        case InstakiloMainController.identifier:
+        case InstaMainTabController.identifier:
             coordinator?.showInstakiloView()
         case EmptyTableViewController.identifier:
             coordinator?.showEmptyTableView()

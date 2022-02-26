@@ -35,8 +35,8 @@
 		41064D5827C4F595006D260A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5727C4F595006D260A /* Color.xcassets */; };
 		41064D5A27C4F7C4006D260A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5927C4F7C4006D260A /* Theme.swift */; };
 		41064D5D27C53449006D260A /* Instakilo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41064D5C27C53449006D260A /* Instakilo.storyboard */; };
-		41064D5F27C53469006D260A /* InstakiloCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5E27C53469006D260A /* InstakiloCoordinator.swift */; };
-		41064D6727C53F4C006D260A /* InstakiloMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */; };
+		41064D5F27C53469006D260A /* InstaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D5E27C53469006D260A /* InstaCoordinator.swift */; };
+		41064D6727C53F4C006D260A /* InstaMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6627C53F4C006D260A /* InstaMainTabBarController.swift */; };
 		41064D6927C5EF51006D260A /* InstaHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6827C5EF51006D260A /* InstaHomeViewController.swift */; };
 		41064D6D27C5EFB9006D260A /* InstaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */; };
 		41064D7027C5EFE2006D260A /* InstaAddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */; };
@@ -113,8 +113,8 @@
 		41064D5727C4F595006D260A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		41064D5927C4F7C4006D260A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		41064D5C27C53449006D260A /* Instakilo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Instakilo.storyboard; sourceTree = "<group>"; };
-		41064D5E27C53469006D260A /* InstakiloCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstakiloCoordinator.swift; sourceTree = "<group>"; };
-		41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstakiloMainTabBarController.swift; sourceTree = "<group>"; };
+		41064D5E27C53469006D260A /* InstaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCoordinator.swift; sourceTree = "<group>"; };
+		41064D6627C53F4C006D260A /* InstaMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaMainTabBarController.swift; sourceTree = "<group>"; };
 		41064D6827C5EF51006D260A /* InstaHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaHomeViewController.swift; sourceTree = "<group>"; };
 		41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSearchViewController.swift; sourceTree = "<group>"; };
 		41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAddPostViewController.swift; sourceTree = "<group>"; };
@@ -305,8 +305,8 @@
 				41064D6B27C5EF8C006D260A /* InstaSearch */,
 				41064D6A27C5EF57006D260A /* InstaHome */,
 				41064D5C27C53449006D260A /* Instakilo.storyboard */,
-				41064D6627C53F4C006D260A /* InstakiloMainTabBarController.swift */,
-				41064D5E27C53469006D260A /* InstakiloCoordinator.swift */,
+				41064D6627C53F4C006D260A /* InstaMainTabBarController.swift */,
+				41064D5E27C53469006D260A /* InstaCoordinator.swift */,
 			);
 			path = Instakilo;
 			sourceTree = "<group>";
@@ -360,10 +360,58 @@
 			isa = PBXGroup;
 			children = (
 				41064D7627C5F02E006D260A /* InstaProfileViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8527C61931006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D7227C5F003006D260A /* InstaShopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8627C6194E006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8727C6195D006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8827C619BD006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D7927C5F0DC006D260A /* HomeCoordinator.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D8927C619D6006D260A /* InstaPostList */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8A27C619FA006D260A /* ViewController */,
+			);
+			path = InstaPostList;
+			sourceTree = "<group>";
+		};
+		41064D8A27C619FA006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D8B27C61A23006D260A /* InstaPostListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41064D9B27C891DA006D260A /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,26 +467,10 @@
 			isa = PBXGroup;
 			children = (
 				41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
-		41064D8527C61931006D260A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D7227C5F003006D260A /* InstaShopViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		41064D8627C6194E006D260A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
 		41064DA227C892A2006D260A /* HeroTwo */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,34 +491,18 @@
 			isa = PBXGroup;
 			children = (
 				41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
-		41064D8727C6195D006D260A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41064DA527C892F0006D260A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				41A6DADC27BCD5A5003F44CA /* LottieViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
-		41064D8827C619BD006D260A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D7927C5F0DC006D260A /* HomeCoordinator.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41064DA627C8930C006D260A /* CoreGraphicPractice */ = {
 			isa = PBXGroup;
 			children = (
@@ -499,26 +515,10 @@
 			isa = PBXGroup;
 			children = (
 				41064DA827C89354006D260A /* CGPracticeViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
-		41064D8927C619D6006D260A /* InstaPostList */ = {
-			isa = PBXGroup;
-			children = (
-				41064D8A27C619FA006D260A /* ViewController */,
 			);
-			path = InstaPostList;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		41064D8A27C619FA006D260A /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D8B27C61A23006D260A /* InstaPostListViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
 		41064DAA27C8A73D006D260A /* CoreAnimationPractice */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,10 +531,10 @@
 			isa = PBXGroup;
 			children = (
 				41064DAC27C8A765006D260A /* CAPracticeViewController.swift */,
-                );
-            path = ViewController;
-            sourceTree = "<group>";
-        };
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41064DB527C8C0D3006D260A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -928,7 +928,7 @@
 				41064D1427BE6A87006D260A /* Coordinator.swift in Sources */,
 				41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */,
 				41A6DAF627BD1C34003F44CA /* HeroListViewController.swift in Sources */,
-				41064D6727C53F4C006D260A /* InstakiloMainTabBarController.swift in Sources */,
+				41064D6727C53F4C006D260A /* InstaMainTabBarController.swift in Sources */,
 				41064D2E27C23984006D260A /* Note+Extension.swift in Sources */,
 				41064D2B27BFA312006D260A /* DataController.swift in Sources */,
 				41064D7A27C5F0DC006D260A /* HomeCoordinator.swift in Sources */,
@@ -946,7 +946,7 @@
 				41A6DADA27BCD57D003F44CA /* MainViewController.swift in Sources */,
 				41064D4427C4C662006D260A /* Utilities.swift in Sources */,
 				41064D6927C5EF51006D260A /* InstaHomeViewController.swift in Sources */,
-				41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */,
+				41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */,
 				41064D7C27C5F0F0006D260A /* SearchCoordinator.swift in Sources */,
 				41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */,
 				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
@@ -957,7 +957,7 @@
 				41064DAD27C8A765006D260A /* CAPracticeViewController.swift in Sources */,
 				41064D1D27BE6FA6006D260A /* ViewRepo.swift in Sources */,
 				41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */,
-				41064D5F27C53469006D260A /* InstakiloCoordinator.swift in Sources */,
+				41064D5F27C53469006D260A /* InstaCoordinator.swift in Sources */,
 				41064D2327BE714A006D260A /* NoteCoordinator.swift in Sources */,
 				41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */,
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,

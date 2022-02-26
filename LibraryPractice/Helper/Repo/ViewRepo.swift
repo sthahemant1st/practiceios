@@ -79,8 +79,8 @@ struct ViewRepo {
     }
     
     struct Instakilo {
-        static func getInstakiloMainController() -> InstakiloMainController {
-            let vc = Storyboard.instakilo.viewController(InstakiloMainController.self)
+        static func getInstaMainTabController() -> InstaMainTabController {
+            let vc = Storyboard.instakilo.viewController(InstaMainTabController.self)
             return vc
         }
         

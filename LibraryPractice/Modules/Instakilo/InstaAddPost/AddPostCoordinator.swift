@@ -9,7 +9,7 @@ import UIKit
 
 class AddPostCoordinator: Coordinator {
     var childCoordinators: [Coordinator]
-    var parentCoordinator: InstakiloCoordinator!
+    var parentCoordinator: InstaCoordinator!
     
     var navigationController: UINavigationController
     

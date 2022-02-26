@@ -31,9 +31,9 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     }
     
     func showInstakiloView() {
-        let instakiloCoordinator = InstakiloCoordinator(navigationController: navigationController)
-        instakiloCoordinator.start()
-        childCoordinators.append(instakiloCoordinator)
+        let instaCoordinator = InstaCoordinator(navigationController: navigationController)
+        instaCoordinator.start()
+        childCoordinators.append(instaCoordinator)
     }
     
     func showLottieView() {
