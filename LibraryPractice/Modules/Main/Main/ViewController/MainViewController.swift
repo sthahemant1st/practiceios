@@ -15,6 +15,12 @@ class MainViewController: UIViewController {
         MainItem(imageName: "empty",
                  title: "Empty Table View",
                  identifier: EmptyTableViewController.identifier),
+        MainItem(imageName: "coreAnimation",
+                 title: "Core Animation Practice",
+                 identifier: CAPracticeViewController.identifier),
+        MainItem(imageName: "coreGraphics",
+                 title: "Core Graphics Practice",
+                 identifier: CGPracticeViewController.identifier),
         MainItem(imageName: "lottie",
                  title: "Lottie View",
                  identifier: LottieViewController.identifier),
@@ -29,10 +35,7 @@ class MainViewController: UIViewController {
                  identifier: NotebookListViewController.identifier),
         MainItem(imageName: "biometric",
                  title: "Biometric Authentication",
-                 identifier: BiometricPracticeViewController.identifier),
-        MainItem(imageName: "biometric",
-                 title: "Core Graphics Practice",
-                 identifier: CGPracticeViewController.identifier)
+                 identifier: BiometricPracticeViewController.identifier)
     ]
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -96,6 +99,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             coordinator?.showBiometricView()
         case CGPracticeViewController.identifier:
             coordinator?.showCGPractiveView()
+        case CAPracticeViewController.identifier:
+            coordinator?.showCAPractiveView()
         default:
             print("identifier not handled")
         }
