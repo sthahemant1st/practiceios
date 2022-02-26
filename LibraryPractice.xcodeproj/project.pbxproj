@@ -10,8 +10,8 @@
 		41064D0927BE2E2D006D260A /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D0727BE2E2D006D260A /* MainCollectionViewCell.swift */; };
 		41064D0A27BE2E2D006D260A /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41064D0827BE2E2D006D260A /* MainCollectionViewCell.xib */; };
 		41064D0D27BE2F1F006D260A /* MainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D0C27BE2F1F006D260A /* MainItem.swift */; };
-		41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D0E27BE334D006D260A /* CollectionViewCellExtension.swift */; };
-		41064D1127BE33A7006D260A /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D1027BE33A7006D260A /* TableViewCellExtension.swift */; };
+		41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D0E27BE334D006D260A /* Extension+CollectionViewCell.swift */; };
+		41064D1127BE33A7006D260A /* Extension+TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D1027BE33A7006D260A /* Extension+TableViewCell.swift */; };
 		41064D1427BE6A87006D260A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D1327BE6A87006D260A /* Coordinator.swift */; };
 		41064D1827BE6E57006D260A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D1727BE6E57006D260A /* MainCoordinator.swift */; };
 		41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D1A27BE6F97006D260A /* Storyboard.swift */; };
@@ -48,6 +48,17 @@
 		41064D8027C5F124006D260A /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D7F27C5F124006D260A /* ProfileCoordinator.swift */; };
 		41064D8227C5F160006D260A /* AddPostCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D8127C5F160006D260A /* AddPostCoordinator.swift */; };
 		41064D8C27C61A23006D260A /* InstaPostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064D8B27C61A23006D260A /* InstaPostListViewController.swift */; };
+		41064DA927C89354006D260A /* CGPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DA827C89354006D260A /* CGPracticeViewController.swift */; };
+		41064DAD27C8A765006D260A /* CAPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DAC27C8A765006D260A /* CAPracticeViewController.swift */; };
+		41064DC127C8C0D3006D260A /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DB627C8C0D3006D260A /* Extension+Date.swift */; };
+		41064DC227C8C0D3006D260A /* Extensiton+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DB727C8C0D3006D260A /* Extensiton+Array.swift */; };
+		41064DC327C8C0D3006D260A /* Extension+NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DB827C8C0D3006D260A /* Extension+NSAttributedString.swift */; };
+		41064DC427C8C0D3006D260A /* Extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DB927C8C0D3006D260A /* Extension+Int.swift */; };
+		41064DC727C8C0D3006D260A /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBC27C8C0D3006D260A /* Extension+String.swift */; };
+		41064DC827C8C0D3006D260A /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBD27C8C0D3006D260A /* Extension+Double.swift */; };
+		41064DC927C8C0D3006D260A /* Extension+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBE27C8C0D3006D260A /* Extension+Bool.swift */; };
+		41064DCA27C8C0D3006D260A /* Extension+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBF27C8C0D3006D260A /* Extension+Optional.swift */; };
+		41064DCB27C8C0D3006D260A /* Extension+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DC027C8C0D3006D260A /* Extension+Float.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -59,7 +70,7 @@
 		41A6DAE327BCE21C003F44CA /* lottieA.json in Resources */ = {isa = PBXBuildFile; fileRef = 41A6DAE227BCE21C003F44CA /* lottieA.json */; };
 		41A6DAE627BCF9D1003F44CA /* HeroOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */; };
 		41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */; };
-		41A6DAED27BCFF2C003F44CA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAEC27BCFF2C003F44CA /* ViewControllerExtension.swift */; };
+		41A6DAED27BCFF2C003F44CA /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAEC27BCFF2C003F44CA /* Extension+ViewController.swift */; };
 		41A6DAF127BD002F003F44CA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAF027BD002F003F44CA /* AppConstants.swift */; };
 		41A6DAF427BD0E65003F44CA /* HeroHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAF327BD0E65003F44CA /* HeroHelper.swift */; };
 		41A6DAF627BD1C34003F44CA /* HeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */; };
@@ -76,8 +87,8 @@
 		41064D0727BE2E2D006D260A /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		41064D0827BE2E2D006D260A /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		41064D0C27BE2F1F006D260A /* MainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItem.swift; sourceTree = "<group>"; };
-		41064D0E27BE334D006D260A /* CollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellExtension.swift; sourceTree = "<group>"; };
-		41064D1027BE33A7006D260A /* TableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
+		41064D0E27BE334D006D260A /* Extension+CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CollectionViewCell.swift"; sourceTree = "<group>"; };
+		41064D1027BE33A7006D260A /* Extension+TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TableViewCell.swift"; sourceTree = "<group>"; };
 		41064D1327BE6A87006D260A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		41064D1727BE6E57006D260A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		41064D1A27BE6F97006D260A /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
@@ -115,6 +126,17 @@
 		41064D7F27C5F124006D260A /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		41064D8127C5F160006D260A /* AddPostCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostCoordinator.swift; sourceTree = "<group>"; };
 		41064D8B27C61A23006D260A /* InstaPostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPostListViewController.swift; sourceTree = "<group>"; };
+		41064DA827C89354006D260A /* CGPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPracticeViewController.swift; sourceTree = "<group>"; };
+		41064DAC27C8A765006D260A /* CAPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAPracticeViewController.swift; sourceTree = "<group>"; };
+		41064DB627C8C0D3006D260A /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		41064DB727C8C0D3006D260A /* Extensiton+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensiton+Array.swift"; sourceTree = "<group>"; };
+		41064DB827C8C0D3006D260A /* Extension+NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+NSAttributedString.swift"; sourceTree = "<group>"; };
+		41064DB927C8C0D3006D260A /* Extension+Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Int.swift"; sourceTree = "<group>"; };
+		41064DBC27C8C0D3006D260A /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		41064DBD27C8C0D3006D260A /* Extension+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+		41064DBE27C8C0D3006D260A /* Extension+Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Bool.swift"; sourceTree = "<group>"; };
+		41064DBF27C8C0D3006D260A /* Extension+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Optional.swift"; sourceTree = "<group>"; };
+		41064DC027C8C0D3006D260A /* Extension+Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Float.swift"; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,7 +150,7 @@
 		41A6DAE227BCE21C003F44CA /* lottieA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottieA.json; sourceTree = "<group>"; };
 		41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroOneViewController.swift; sourceTree = "<group>"; };
 		41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTwoViewController.swift; sourceTree = "<group>"; };
-		41A6DAEC27BCFF2C003F44CA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		41A6DAEC27BCFF2C003F44CA /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
 		41A6DAF027BD002F003F44CA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		41A6DAF327BD0E65003F44CA /* HeroHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHelper.swift; sourceTree = "<group>"; };
 		41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewController.swift; sourceTree = "<group>"; };
@@ -197,35 +219,12 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
-		41064D1F27BE7042006D260A /* ViewControllers */ = {
+		41064D2027BE707D006D260A /* HeroList */ = {
 			isa = PBXGroup;
 			children = (
-				41064D2127BE70F2006D260A /* MainViewController */,
-				41064D3827C39192006D260A /* BiometricPracticeViewController */,
-				41064D2027BE707D006D260A /* HeroListViewController */,
-				41A6DAE427BCF9B9003F44CA /* HeroOneViewController */,
-				41A6DADE27BCD630003F44CA /* EmptyTableViewController */,
-				41A6DADB27BCD585003F44CA /* LottieViewController */,
+				41064DA027C8926A006D260A /* ViewController */,
 			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		41064D2027BE707D006D260A /* HeroListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */,
-			);
-			path = HeroListViewController;
-			sourceTree = "<group>";
-		};
-		41064D2127BE70F2006D260A /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				41064D0627BE2E02006D260A /* Views */,
-				41064D0B27BE2F0D006D260A /* Model */,
-				41A6DAD927BCD57D003F44CA /* MainViewController.swift */,
-			);
-			path = MainViewController;
+			path = HeroList;
 			sourceTree = "<group>";
 		};
 		41064D2427BE7163006D260A /* NotebookListViewController */ = {
@@ -261,13 +260,12 @@
 			path = "NSObject Extension";
 			sourceTree = "<group>";
 		};
-		41064D3827C39192006D260A /* BiometricPracticeViewController */ = {
+		41064D3827C39192006D260A /* BiometricPractice */ = {
 			isa = PBXGroup;
 			children = (
-				41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */,
-				41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */,
+				41064D9D27C89221006D260A /* ViewController */,
 			);
-			path = BiometricPracticeViewController;
+			path = BiometricPractice;
 			sourceTree = "<group>";
 		};
 		41064D3B27C394A2006D260A /* Designables */ = {
@@ -362,10 +360,69 @@
 			isa = PBXGroup;
 			children = (
 				41064D7627C5F02E006D260A /* InstaProfileViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064D9B27C891DA006D260A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				41064D0B27BE2F0D006D260A /* Model */,
+				41064D0627BE2E02006D260A /* Views */,
+				41064D9C27C891EE006D260A /* ViewController */,
+				41064D1727BE6E57006D260A /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		41064D9C27C891EE006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAD927BCD57D003F44CA /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		41064D9D27C89221006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3927C391C4006D260A /* BiometricPracticeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064D9E27C8923A006D260A /* BiometricSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				41064D9F27C8924B006D260A /* ViewController */,
+			);
+			path = BiometricSuccess;
+			sourceTree = "<group>";
+		};
+		41064D9F27C8924B006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064D3E27C3B0A0006D260A /* BiometricSuccessViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA027C8926A006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAF527BD1C34003F44CA /* HeroListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA127C8928B006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
 		41064D8527C61931006D260A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,26 +435,74 @@
 			isa = PBXGroup;
 			children = (
 				41064D6F27C5EFE2006D260A /* InstaAddPostViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064DA227C892A2006D260A /* HeroTwo */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA327C892A8006D260A /* ViewController */,
+				41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */,
 			);
-			path = ViewController;
+			path = HeroTwo;
 			sourceTree = "<group>";
 		};
+		41064DA327C892A8006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		41064DA427C892D2006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
 		41064D8727C6195D006D260A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				41064D6C27C5EFB9006D260A /* InstaSearchViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064DA527C892F0006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DADC27BCD5A5003F44CA /* LottieViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
 		41064D8827C619BD006D260A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				41064D7927C5F0DC006D260A /* HomeCoordinator.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064DA627C8930C006D260A /* CoreGraphicPractice */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA727C8933E006D260A /* ViewController */,
 			);
-			path = ViewController;
+			path = CoreGraphicPractice;
 			sourceTree = "<group>";
 		};
+		41064DA727C8933E006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064DA827C89354006D260A /* CGPracticeViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
 		41064D8927C619D6006D260A /* InstaPostList */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,8 +515,50 @@
 			isa = PBXGroup;
 			children = (
 				41064D8B27C61A23006D260A /* InstaPostListViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064DAA27C8A73D006D260A /* CoreAnimationPractice */ = {
+			isa = PBXGroup;
+			children = (
+				41064DAB27C8A748006D260A /* ViewController */,
 			);
-			path = ViewController;
+			path = CoreAnimationPractice;
+			sourceTree = "<group>";
+		};
+		41064DAB27C8A748006D260A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41064DAC27C8A765006D260A /* CAPracticeViewController.swift */,
+                );
+            path = ViewController;
+            sourceTree = "<group>";
+        };
+		41064DB527C8C0D3006D260A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				41064DB627C8C0D3006D260A /* Extension+Date.swift */,
+				41064DB727C8C0D3006D260A /* Extensiton+Array.swift */,
+				41064DB827C8C0D3006D260A /* Extension+NSAttributedString.swift */,
+				41064DB927C8C0D3006D260A /* Extension+Int.swift */,
+				41064DBC27C8C0D3006D260A /* Extension+String.swift */,
+				41064DBD27C8C0D3006D260A /* Extension+Double.swift */,
+				41064DBE27C8C0D3006D260A /* Extension+Bool.swift */,
+				41064DBF27C8C0D3006D260A /* Extension+Optional.swift */,
+				41064DC027C8C0D3006D260A /* Extension+Float.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		41064DCC27C8C0E3006D260A /* UiKit */ = {
+			isa = PBXGroup;
+			children = (
+				41A6DAEC27BCFF2C003F44CA /* Extension+ViewController.swift */,
+				41064D0E27BE334D006D260A /* Extension+CollectionViewCell.swift */,
+				41064D1027BE33A7006D260A /* Extension+TableViewCell.swift */,
+			);
+			path = UiKit;
 			sourceTree = "<group>";
 		};
 		41A6DAB727BCBB5D003F44CA = {
@@ -459,27 +606,35 @@
 		41A6DAD827BCD55E003F44CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				41064D1F27BE7042006D260A /* ViewControllers */,
-				41064D1727BE6E57006D260A /* MainCoordinator.swift */,
+				41064D9B27C891DA006D260A /* Main */,
+				41064DAA27C8A73D006D260A /* CoreAnimationPractice */,
+				41064DA627C8930C006D260A /* CoreGraphicPractice */,
+				41064D3827C39192006D260A /* BiometricPractice */,
+				41064D9E27C8923A006D260A /* BiometricSuccess */,
+				41064D2027BE707D006D260A /* HeroList */,
+				41A6DAE427BCF9B9003F44CA /* HeroOne */,
+				41064DA227C892A2006D260A /* HeroTwo */,
+				41A6DADE27BCD630003F44CA /* EmptyTable */,
+				41A6DADB27BCD585003F44CA /* Lottie */,
 				41A6DAC927BCBB5D003F44CA /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		41A6DADB27BCD585003F44CA /* LottieViewController */ = {
+		41A6DADB27BCD585003F44CA /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				41A6DADC27BCD5A5003F44CA /* LottieViewController.swift */,
+				41064DA527C892F0006D260A /* ViewController */,
 			);
-			path = LottieViewController;
+			path = Lottie;
 			sourceTree = "<group>";
 		};
-		41A6DADE27BCD630003F44CA /* EmptyTableViewController */ = {
+		41A6DADE27BCD630003F44CA /* EmptyTable */ = {
 			isa = PBXGroup;
 			children = (
-				41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */,
+				41064DA427C892D2006D260A /* ViewController */,
 			);
-			path = EmptyTableViewController;
+			path = EmptyTable;
 			sourceTree = "<group>";
 		};
 		41A6DAE127BCD686003F44CA /* AppDelegates */ = {
@@ -491,14 +646,13 @@
 			path = AppDelegates;
 			sourceTree = "<group>";
 		};
-		41A6DAE427BCF9B9003F44CA /* HeroOneViewController */ = {
+		41A6DAE427BCF9B9003F44CA /* HeroOne */ = {
 			isa = PBXGroup;
 			children = (
 				41A6DAF727BD1D9D003F44CA /* CutomViews */,
-				41A6DAE527BCF9D1003F44CA /* HeroOneViewController.swift */,
-				41A6DAE727BCF9DC003F44CA /* HeroTwoViewController.swift */,
+				41064DA127C8928B006D260A /* ViewController */,
 			);
-			path = HeroOneViewController;
+			path = HeroOne;
 			sourceTree = "<group>";
 		};
 		41A6DAE927BCFE6D003F44CA /* Helper */ = {
@@ -525,9 +679,8 @@
 		41A6DAEB27BCFF15003F44CA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				41A6DAEC27BCFF2C003F44CA /* ViewControllerExtension.swift */,
-				41064D0E27BE334D006D260A /* CollectionViewCellExtension.swift */,
-				41064D1027BE33A7006D260A /* TableViewCellExtension.swift */,
+				41064DCC27C8C0E3006D260A /* UiKit */,
+				41064DB527C8C0D3006D260A /* Foundation */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -757,7 +910,9 @@
 				41064D1827BE6E57006D260A /* MainCoordinator.swift in Sources */,
 				41064D0927BE2E2D006D260A /* MainCollectionViewCell.swift in Sources */,
 				41064D7727C5F02E006D260A /* InstaProfileViewController.swift in Sources */,
+				41064DC427C8C0D3006D260A /* Extension+Int.swift in Sources */,
 				41A6DAF127BD002F003F44CA /* AppConstants.swift in Sources */,
+				41064DC327C8C0D3006D260A /* Extension+NSAttributedString.swift in Sources */,
 				41064D3727C3715E006D260A /* Pathifier.swift in Sources */,
 				41064D8227C5F160006D260A /* AddPostCoordinator.swift in Sources */,
 				41064D3027C23994006D260A /* Notebook+Extension.swift in Sources */,
@@ -765,6 +920,7 @@
 				41064D7027C5EFE2006D260A /* InstaAddPostViewController.swift in Sources */,
 				41064D2927BF952D006D260A /* NoteModel.xcdatamodeld in Sources */,
 				41064D3A27C391C4006D260A /* BiometricPracticeViewController.swift in Sources */,
+				41064DC727C8C0D3006D260A /* Extension+String.swift in Sources */,
 				41064D5A27C4F7C4006D260A /* Theme.swift in Sources */,
 				41A6DB0627BE1BAF003F44CA /* NotebookListViewController.swift in Sources */,
 				41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */,
@@ -777,8 +933,11 @@
 				41064D2B27BFA312006D260A /* DataController.swift in Sources */,
 				41064D7A27C5F0DC006D260A /* HomeCoordinator.swift in Sources */,
 				41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */,
-				41A6DAED27BCFF2C003F44CA /* ViewControllerExtension.swift in Sources */,
+				41A6DAED27BCFF2C003F44CA /* Extension+ViewController.swift in Sources */,
 				41A6DB0A27BE1BCD003F44CA /* NoteDetailsViewController.swift in Sources */,
+				41064DC227C8C0D3006D260A /* Extensiton+Array.swift in Sources */,
+				41064DC927C8C0D3006D260A /* Extension+Bool.swift in Sources */,
+				41064DA927C89354006D260A /* CGPracticeViewController.swift in Sources */,
 				41A6DB0827BE1BBB003F44CA /* NoteListViewController.swift in Sources */,
 				41064D8C27C61A23006D260A /* InstaPostListViewController.swift in Sources */,
 				41064D7E27C5F0FD006D260A /* ShopCoordinator.swift in Sources */,
@@ -789,10 +948,13 @@
 				41064D6927C5EF51006D260A /* InstaHomeViewController.swift in Sources */,
 				41064D0F27BE334D006D260A /* CollectionViewCellExtension.swift in Sources */,
 				41064D7C27C5F0F0006D260A /* SearchCoordinator.swift in Sources */,
+				41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */,
 				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
+				41064DC827C8C0D3006D260A /* Extension+Double.swift in Sources */,
 				41A6DAE627BCF9D1003F44CA /* HeroOneViewController.swift in Sources */,
 				41064D6D27C5EFB9006D260A /* InstaSearchViewController.swift in Sources */,
 				41064D7327C5F003006D260A /* InstaShopViewController.swift in Sources */,
+				41064DAD27C8A765006D260A /* CAPracticeViewController.swift in Sources */,
 				41064D1D27BE6FA6006D260A /* ViewRepo.swift in Sources */,
 				41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */,
 				41064D5F27C53469006D260A /* InstakiloCoordinator.swift in Sources */,
@@ -801,7 +963,10 @@
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,
 				41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */,
 				41A6DAF427BD0E65003F44CA /* HeroHelper.swift in Sources */,
-				41064D1127BE33A7006D260A /* TableViewCellExtension.swift in Sources */,
+				41064DCB27C8C0D3006D260A /* Extension+Float.swift in Sources */,
+				41064DC127C8C0D3006D260A /* Extension+Date.swift in Sources */,
+				41064D1127BE33A7006D260A /* Extension+TableViewCell.swift in Sources */,
+				41064DCA27C8C0D3006D260A /* Extension+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

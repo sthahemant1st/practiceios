@@ -48,6 +48,17 @@ struct ViewRepo {
             let vc = Storyboard.main.viewController(BiometricSuccessViewController.self)
             return vc
         }
+        
+        static func getCGPracticeViewController() -> CGPracticeViewController {
+            let vc = Storyboard.main.viewController(CGPracticeViewController.self)
+            return vc
+        }
+        
+        static func getCAPracticeViewController() -> CAPracticeViewController {
+            let vc = Storyboard.main.viewController(CAPracticeViewController.self)
+            return vc
+        }
+        
     }
     
     struct Note {

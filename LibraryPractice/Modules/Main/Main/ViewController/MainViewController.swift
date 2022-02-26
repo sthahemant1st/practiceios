@@ -18,6 +18,12 @@ class MainViewController: UIViewController {
         MainItem(imageName: "empty",
                  title: "Empty Table View",
                  identifier: EmptyTableViewController.identifier),
+        MainItem(imageName: "coreAnimation",
+                 title: "Core Animation Practice",
+                 identifier: CAPracticeViewController.identifier),
+        MainItem(imageName: "coreGraphics",
+                 title: "Core Graphics Practice",
+                 identifier: CGPracticeViewController.identifier),
         MainItem(imageName: "lottie",
                  title: "Lottie View",
                  identifier: LottieViewController.identifier),
@@ -96,6 +102,10 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             coordinator?.showNoteVc()
         case BiometricPracticeViewController.identifier:
             coordinator?.showBiometricView()
+        case CGPracticeViewController.identifier:
+            coordinator?.showCGPractiveView()
+        case CAPracticeViewController.identifier:
+            coordinator?.showCAPractiveView()
         default:
             print("identifier not handled")
         }
