@@ -59,6 +59,7 @@
 		41064DC927C8C0D3006D260A /* Extension+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBE27C8C0D3006D260A /* Extension+Bool.swift */; };
 		41064DCA27C8C0D3006D260A /* Extension+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DBF27C8C0D3006D260A /* Extension+Optional.swift */; };
 		41064DCB27C8C0D3006D260A /* Extension+Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41064DC027C8C0D3006D260A /* Extension+Float.swift */; };
+		418926DD27CCAF9A00B90F67 /* MCVMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926DC27CCAF9A00B90F67 /* MCVMainViewController.swift */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -137,6 +138,7 @@
 		41064DBE27C8C0D3006D260A /* Extension+Bool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Bool.swift"; sourceTree = "<group>"; };
 		41064DBF27C8C0D3006D260A /* Extension+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Optional.swift"; sourceTree = "<group>"; };
 		41064DC027C8C0D3006D260A /* Extension+Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Float.swift"; sourceTree = "<group>"; };
+		418926DC27CCAF9A00B90F67 /* MCVMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCVMainViewController.swift; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -561,6 +563,30 @@
 			path = UiKit;
 			sourceTree = "<group>";
 		};
+		418926D727CCAEE900B90F67 /* ModernCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				418926DA27CCAF6C00B90F67 /* MCVMain */,
+			);
+			path = ModernCollectionView;
+			sourceTree = "<group>";
+		};
+		418926DA27CCAF6C00B90F67 /* MCVMain */ = {
+			isa = PBXGroup;
+			children = (
+				418926DB27CCAF8600B90F67 /* ViewController */,
+			);
+			path = MCVMain;
+			sourceTree = "<group>";
+		};
+		418926DB27CCAF8600B90F67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				418926DC27CCAF9A00B90F67 /* MCVMainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		41A6DAB727BCBB5D003F44CA = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +633,7 @@
 			isa = PBXGroup;
 			children = (
 				41064D9B27C891DA006D260A /* Main */,
+				418926D727CCAEE900B90F67 /* ModernCollectionView */,
 				41064DAA27C8A73D006D260A /* CoreAnimationPractice */,
 				41064DA627C8930C006D260A /* CoreGraphicPractice */,
 				41064D3827C39192006D260A /* BiometricPractice */,
@@ -908,6 +935,7 @@
 			files = (
 				41A6DADD27BCD5A5003F44CA /* LottieViewController.swift in Sources */,
 				41064D1827BE6E57006D260A /* MainCoordinator.swift in Sources */,
+				418926DD27CCAF9A00B90F67 /* MCVMainViewController.swift in Sources */,
 				41064D0927BE2E2D006D260A /* MainCollectionViewCell.swift in Sources */,
 				41064D7727C5F02E006D260A /* InstaProfileViewController.swift in Sources */,
 				41064DC427C8C0D3006D260A /* Extension+Int.swift in Sources */,

@@ -30,6 +30,11 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(emptyTableVC, animated: true)
     }
     
+    func showMCVMainViewController() {
+        let vc = ViewRepo.Main.getMCVMainViewController()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
     func showInstakiloView() {
         let instaCoordinator = InstaCoordinator(navigationController: navigationController)
         instaCoordinator.start()

@@ -19,6 +19,11 @@ struct ViewRepo {
             return emptyTableVC
         }
         
+        static func getMCVMainViewController() -> MCVMainViewController {
+            let vc = Storyboard.main.viewController(MCVMainViewController.self)
+            return vc
+        }
+        
         static func getLottieViewController() -> LottieViewController {
             let lottieVC = Storyboard.main.viewController(LottieViewController.self)
             return lottieVC

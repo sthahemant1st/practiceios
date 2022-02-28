@@ -458,6 +458,21 @@
             </objects>
             <point key="canvasLocation" x="2642.0289855072465" y="725.89285714285711"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="kzS-Gc-aTi">
+            <objects>
+                <viewController storyboardIdentifier="MCVMainViewController" id="VhW-CI-E3v" customClass="MCVMainViewController" customModule="LibraryPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nwt-UG-JBG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ywx-rU-al1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2e-KQ-Ow8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3309" y="726"/>
+        </scene>
         <!--Lottie View Controller-->
         <scene sceneID="Ls5-rE-3CH">
             <objects>
@@ -597,10 +612,11 @@
     </scenes>
     <designables>
         <designable name="rE9-HV-3Cf">
-            <size key="intrinsicContentSize" width="90.5" height="34"/>
+            <size key="intrinsicContentSize" width="115.5" height="34"/>
         </designable>
+        <designable name="uGs-6d-1md"/>
         <designable name="yY2-Qs-zI5">
-            <size key="intrinsicContentSize" width="94" height="34"/>
+            <size key="intrinsicContentSize" width="122" height="34"/>
         </designable>
     </designables>
     <resources>

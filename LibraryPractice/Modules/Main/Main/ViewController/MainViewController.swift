@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
                  title: "Instakilo",
                  identifier: InstaMainTabController.identifier),
         MainItem(imageName: "empty",
+                 title: "Modern View",
+                 identifier: MCVMainViewController.identifier),
+        MainItem(imageName: "empty",
                  title: "Empty Table View",
                  identifier: EmptyTableViewController.identifier),
         MainItem(imageName: "coreAnimation",
@@ -92,6 +95,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             coordinator?.showInstakiloView()
         case EmptyTableViewController.identifier:
             coordinator?.showEmptyTableView()
+        case MCVMainViewController.identifier:
+            coordinator?.showMCVMainViewController()
         case LottieViewController.identifier:
             coordinator?.showLottieView()
         case HeroOneViewController.identifier:
