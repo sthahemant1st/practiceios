@@ -47,22 +47,18 @@ class MCVMainViewController: UIViewController {
         return [
             OutlineItem(title: "Compositional Layout", subItems: [
                 OutlineItem(title: "Getting Started", subItems: [
-                    OutlineItem(title: "Grid",
-                                outlineViewController: MCVMainViewController.self),
                     OutlineItem(title: "Inset Items Grid",
-                                outlineViewController: MCVMainViewController.self),
-                    OutlineItem(title: "Two Column Grid",
-                                outlineViewController: MCVMainViewController.self),
+                                outlineViewController: InsetItemGridViewController.self),
                     OutlineItem(title: "Distinct Section",
-                                outlineViewController: MCVMainViewController.self)
+                                outlineViewController: DistinctSectionGridViewController.self)
                 ]),
                 OutlineItem(title: "Advance Layout", subItems: [
                     OutlineItem(title: "Pinned Section Headers",
-                                outlineViewController: MCVMainViewController.self),
+                                outlineViewController: PinnedSectionHeaderViewController.self),
                     OutlineItem(title: "Section Background Decoration",
-                                outlineViewController: MCVMainViewController.self),
+                                outlineViewController: SectionBackgroundDecorationViewController.self),
                     OutlineItem(title: "Orthogonal Section Behaviours",
-                                outlineViewController: MCVMainViewController.self)
+                                outlineViewController: OrthogonalSectionBehaviourViewController.self)
                 ])
             ]),
             OutlineItem(title: "List", subItems: [
