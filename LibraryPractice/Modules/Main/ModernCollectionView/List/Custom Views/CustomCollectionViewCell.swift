@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomCollectionViewCell: UICollectionViewListCell {
+class CustomCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = "CustomCollectionViewCell"
 
     @IBOutlet weak var containerView: UIStackView!
@@ -19,14 +19,14 @@ class CustomCollectionViewCell: UICollectionViewListCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        print("coder: NSCoder")
+        print("init(frame: CGRect)")
     }
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("(frame: CGRect)")
+        print("awakeFromNib")
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         print("coder: NSCoder")

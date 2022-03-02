@@ -71,6 +71,8 @@
 		418926F927CF709600B90F67 /* PinnedSectionHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926F827CF709600B90F67 /* PinnedSectionHeaderViewController.swift */; };
 		418926FB27CF70B200B90F67 /* SectionBackgroundDecorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926FA27CF70B200B90F67 /* SectionBackgroundDecorationViewController.swift */; };
 		418926FD27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926FC27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift */; };
+		4189270527CFE5E000B90F67 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189270327CFE5E000B90F67 /* HeaderCollectionViewCell.swift */; };
+		4189270627CFE5E000B90F67 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4189270427CFE5E000B90F67 /* HeaderCollectionViewCell.xib */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -161,6 +163,8 @@
 		418926F827CF709600B90F67 /* PinnedSectionHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedSectionHeaderViewController.swift; sourceTree = "<group>"; };
 		418926FA27CF70B200B90F67 /* SectionBackgroundDecorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundDecorationViewController.swift; sourceTree = "<group>"; };
 		418926FC27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalSectionBehaviourViewController.swift; sourceTree = "<group>"; };
+		4189270327CFE5E000B90F67 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		4189270427CFE5E000B90F67 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -653,11 +657,21 @@
 		418926F727CF706A00B90F67 /* Advanced Layout */ = {
 			isa = PBXGroup;
 			children = (
+				418926FE27CF975A00B90F67 /* Views */,
 				418926F827CF709600B90F67 /* PinnedSectionHeaderViewController.swift */,
 				418926FA27CF70B200B90F67 /* SectionBackgroundDecorationViewController.swift */,
 				418926FC27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift */,
 			);
 			path = "Advanced Layout";
+			sourceTree = "<group>";
+		};
+		418926FE27CF975A00B90F67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4189270327CFE5E000B90F67 /* HeaderCollectionViewCell.swift */,
+				4189270427CFE5E000B90F67 /* HeaderCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		41A6DAB727BCBB5D003F44CA = {
@@ -953,6 +967,7 @@
 				41064D0A27BE2E2D006D260A /* MainCollectionViewCell.xib in Resources */,
 				41A6DACB27BCBB5D003F44CA /* Main.storyboard in Resources */,
 				41064D5527C4DFEB006D260A /* DancingScript-Regular.ttf in Resources */,
+				4189270627CFE5E000B90F67 /* HeaderCollectionViewCell.xib in Resources */,
 				41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */,
 				418926EE27CF4F3600B90F67 /* CustomCollectionViewCell.xib in Resources */,
 			);
@@ -1055,6 +1070,7 @@
 				41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */,
 				41064D7C27C5F0F0006D260A /* SearchCoordinator.swift in Sources */,
 				41064D0F27BE334D006D260A /* Extension+CollectionViewCell.swift in Sources */,
+				4189270527CFE5E000B90F67 /* HeaderCollectionViewCell.swift in Sources */,
 				418926FD27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift in Sources */,
 				41064D3527C35F59006D260A /* UpdateToAttributedStringPolicy.swift in Sources */,
 				418926E727CF1F2D00B90F67 /* ListAppearancesViewController.swift in Sources */,
