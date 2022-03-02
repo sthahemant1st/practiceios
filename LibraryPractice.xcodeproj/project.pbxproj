@@ -64,6 +64,8 @@
 		418926E527CF1F1500B90F67 /* ReoderableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926E427CF1F1500B90F67 /* ReoderableListViewController.swift */; };
 		418926E727CF1F2D00B90F67 /* ListAppearancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926E627CF1F2D00B90F67 /* ListAppearancesViewController.swift */; };
 		418926E927CF1F4100B90F67 /* CustomCellListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926E827CF1F4100B90F67 /* CustomCellListViewController.swift */; };
+		418926ED27CF4F3600B90F67 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926EB27CF4F3600B90F67 /* CustomCollectionViewCell.swift */; };
+		418926EE27CF4F3600B90F67 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 418926EC27CF4F3600B90F67 /* CustomCollectionViewCell.xib */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -147,6 +149,8 @@
 		418926E427CF1F1500B90F67 /* ReoderableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReoderableListViewController.swift; sourceTree = "<group>"; };
 		418926E627CF1F2D00B90F67 /* ListAppearancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppearancesViewController.swift; sourceTree = "<group>"; };
 		418926E827CF1F4100B90F67 /* CustomCellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellListViewController.swift; sourceTree = "<group>"; };
+		418926EB27CF4F3600B90F67 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		418926EC27CF4F3600B90F67 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -599,12 +603,22 @@
 		418926DE27CF1D5900B90F67 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				418926EA27CF4F0200B90F67 /* Custom Views */,
 				418926E227CF1EFC00B90F67 /* SimpleListViewController.swift */,
 				418926E427CF1F1500B90F67 /* ReoderableListViewController.swift */,
 				418926E627CF1F2D00B90F67 /* ListAppearancesViewController.swift */,
 				418926E827CF1F4100B90F67 /* CustomCellListViewController.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		418926EA27CF4F0200B90F67 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				418926EB27CF4F3600B90F67 /* CustomCollectionViewCell.swift */,
+				418926EC27CF4F3600B90F67 /* CustomCollectionViewCell.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		41A6DAB727BCBB5D003F44CA = {
@@ -901,6 +915,7 @@
 				41A6DACB27BCBB5D003F44CA /* Main.storyboard in Resources */,
 				41064D5527C4DFEB006D260A /* DancingScript-Regular.ttf in Resources */,
 				41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */,
+				418926EE27CF4F3600B90F67 /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1025,7 @@
 				41A6DAE827BCF9DC003F44CA /* HeroTwoViewController.swift in Sources */,
 				41064D5F27C53469006D260A /* InstaCoordinator.swift in Sources */,
 				41064D2327BE714A006D260A /* NoteCoordinator.swift in Sources */,
+				418926ED27CF4F3600B90F67 /* CustomCollectionViewCell.swift in Sources */,
 				41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */,
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,
 				418926E327CF1EFC00B90F67 /* SimpleListViewController.swift in Sources */,

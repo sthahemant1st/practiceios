@@ -173,7 +173,3 @@ extension MCVMainViewController: UICollectionViewDelegate {
         }
     }
 }
-
-//extension MCVMainViewController: UICollectionViewDiffableDataSource<Section, OutlineItem> {
-//
-//}
