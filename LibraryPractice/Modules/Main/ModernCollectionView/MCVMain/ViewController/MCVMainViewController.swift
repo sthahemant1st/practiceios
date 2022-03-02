@@ -40,8 +40,8 @@ fileprivate class OutlineItem: Hashable {
 
 class MCVMainViewController: UIViewController {
     
-    fileprivate var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>!
-    var collectionView: UICollectionView!
+    private var dataSource: UICollectionViewDiffableDataSource<Section, OutlineItem>!
+    private var collectionView: UICollectionView!
     
     private var menuItems: [OutlineItem] {
         return [
@@ -64,6 +64,17 @@ class MCVMainViewController: UIViewController {
                     OutlineItem(title: "Orthogonal Section Behaviours",
                                 outlineViewController: MCVMainViewController.self)
                 ])
+            ]),
+            OutlineItem(title: "List", subItems: [
+                OutlineItem(title: "Simple List",
+                            outlineViewController: SimpleListViewController.self),
+                OutlineItem(title: "Reoderable List",
+                            outlineViewController: ReoderableListViewController.self),
+                OutlineItem(title: "List Appearances",
+                            outlineViewController: ListAppearancesViewController.self),
+                OutlineItem(title: "List with custom cell",
+                            outlineViewController: CustomCellListViewController.self)
+                
             ]),
             OutlineItem(title: "Diffable Data Source", subItems: [
                 OutlineItem(title: "Mountain Search",
@@ -153,13 +164,13 @@ class MCVMainViewController: UIViewController {
 
 extension MCVMainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        guard let menuItem = self.dataSource.itemIdentifier(for: indexPath) else { return }
-//
-//        collectionView.deselectItem(at: indexPath, animated: true)
-//
-//        if let viewController = menuItem.outlineViewController {
-//            navigationController?.pushViewController(viewController.init(), animated: true)
-//        }
+        guard let menuItem = self.dataSource.itemIdentifier(for: indexPath) else { return }
+
+        collectionView.deselectItem(at: indexPath, animated: true)
+
+        if let viewController = menuItem.outlineViewController {
+            navigationController?.pushViewController(viewController.init(), animated: true)
+        }
     }
 }
 
