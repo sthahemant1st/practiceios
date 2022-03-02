@@ -70,7 +70,6 @@ class MCVMainViewController: UIViewController {
                             outlineViewController: ListAppearancesViewController.self),
                 OutlineItem(title: "List with custom cell",
                             outlineViewController: CustomCellListViewController.self)
-                
             ]),
             OutlineItem(title: "Diffable Data Source", subItems: [
                 OutlineItem(title: "Mountain Search",
