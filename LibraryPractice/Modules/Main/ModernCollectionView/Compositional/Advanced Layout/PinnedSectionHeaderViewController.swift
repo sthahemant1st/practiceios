@@ -84,8 +84,8 @@ extension PinnedSectionHeaderViewController {
                         print("failed unwraping")
                         return nil
                     }
-                view.newLabel.text = "Header \(indexPath.section)"
-                return view
+            view.newLabel.text = "Header \(indexPath.section)"
+            return view
             
         }
         
