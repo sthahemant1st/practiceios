@@ -35,6 +35,11 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func showBottomSheetPrcatice() {
+        let vc = ViewRepo.Main.getBottomSheetPracticeViewController()
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
     func showInstakiloView() {
         let instaCoordinator = InstaCoordinator(navigationController: navigationController)
         instaCoordinator.start()

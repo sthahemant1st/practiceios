@@ -10,4 +10,5 @@ target 'LibraryPractice' do
   pod 'lottie-ios'
   pod 'Hero'
   pod 'KeychainSwift', '~> 20.0'
+  pod 'FloatingPanel'
 end

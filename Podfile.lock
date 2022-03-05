@@ -1,11 +1,13 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
+  - FloatingPanel (2.5.2)
   - Hero (1.6.1)
   - KeychainSwift (20.0.0)
   - lottie-ios (3.3.0)
 
 DEPENDENCIES:
   - DZNEmptyDataSet
+  - FloatingPanel
   - Hero
   - KeychainSwift (~> 20.0)
   - lottie-ios
@@ -13,16 +15,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - DZNEmptyDataSet
+    - FloatingPanel
     - Hero
     - KeychainSwift
     - lottie-ios
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FloatingPanel: 935712d7a8076630135fbbd47f717700913efef9
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
 
-PODFILE CHECKSUM: e6a0f20f2fc6cb0b9244464ec1786aebc14fd458
+PODFILE CHECKSUM: 5005ba82375f68580d0e694310eacbb123223dc6
 
 COCOAPODS: 1.11.2

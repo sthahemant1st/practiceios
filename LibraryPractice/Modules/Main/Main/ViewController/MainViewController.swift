@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
                  title: "Instakilo",
                  identifier: InstaMainTabController.identifier),
         MainItem(imageName: "empty",
+                 title: "Bottom Sheet Practice",
+                 identifier: BottomSheetPracticeViewController.identifier),
+        MainItem(imageName: "empty",
                  title: "Modern View",
                  identifier: MCVMainViewController.identifier),
         MainItem(imageName: "empty",
@@ -111,6 +114,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             coordinator?.showCGPractiveView()
         case CAPracticeViewController.identifier:
             coordinator?.showCAPractiveView()
+        case BottomSheetPracticeViewController.identifier:
+            coordinator?.showBottomSheetPrcatice()
         default:
             print("identifier not handled")
         }

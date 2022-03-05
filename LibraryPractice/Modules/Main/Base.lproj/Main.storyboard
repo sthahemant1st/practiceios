@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LAA-5Y-gQ3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -25,7 +25,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LAA-5Y-gQ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QcB-8g-C4k"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LAA-5Y-gQ3" secondAttribute="bottom" id="Xv4-Ev-VfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LAA-5Y-gQ3" secondAttribute="bottom" constant="44" id="Xv4-Ev-VfG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LAA-5Y-gQ3" secondAttribute="trailing" id="et4-Pt-Bwp"/>
                             <constraint firstItem="LAA-5Y-gQ3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uHr-mK-irZ"/>
                         </constraints>
@@ -609,14 +609,71 @@
             </objects>
             <point key="canvasLocation" x="3308.6956521739135" y="45.535714285714285"/>
         </scene>
+        <!--Bottom Sheet Practice View Controller-->
+        <scene sceneID="Suf-Bu-7bt">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetPracticeViewController" id="aNG-RH-xeT" customClass="BottomSheetPracticeViewController" customModule="LibraryPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4f6-15-ku7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JVN-GI-QOB">
+                                <rect key="frame" x="155" y="374" width="104" height="148"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifx-r8-3xM">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="show test"/>
+                                        <connections>
+                                            <action selector="showTest:" destination="aNG-RH-xeT" eventType="touchUpInside" id="Vgv-hS-Ew1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfg-8y-KFV">
+                                        <rect key="frame" x="0.0" y="39" width="104" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show empty"/>
+                                        <connections>
+                                            <action selector="showEmpty:" destination="aNG-RH-xeT" eventType="touchUpInside" id="DRs-cV-HCk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dal-UA-GJF">
+                                        <rect key="frame" x="0.0" y="78" width="104" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Lottie"/>
+                                        <connections>
+                                            <action selector="showLottie:" destination="aNG-RH-xeT" eventType="touchUpInside" id="b6h-iw-pFv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-a6-lJf">
+                                        <rect key="frame" x="0.0" y="117" width="104" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Hide all"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="aNG-RH-xeT" eventType="touchUpInside" id="Ykw-aI-ZiB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tvs-kA-Tnk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JVN-GI-QOB" firstAttribute="centerX" secondItem="4f6-15-ku7" secondAttribute="centerX" id="EdG-W7-kDm"/>
+                            <constraint firstItem="JVN-GI-QOB" firstAttribute="centerY" secondItem="4f6-15-ku7" secondAttribute="centerY" id="olU-0i-OtT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0M-jO-Qjy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3999" y="46"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="rE9-HV-3Cf">
-            <size key="intrinsicContentSize" width="115.5" height="34"/>
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
         </designable>
-        <designable name="uGs-6d-1md"/>
         <designable name="yY2-Qs-zI5">
-            <size key="intrinsicContentSize" width="122" height="34"/>
+            <size key="intrinsicContentSize" width="94" height="34"/>
         </designable>
     </designables>
     <resources>

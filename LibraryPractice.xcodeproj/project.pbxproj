@@ -73,6 +73,9 @@
 		418926FD27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418926FC27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift */; };
 		4189270527CFE5E000B90F67 /* HeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4189270327CFE5E000B90F67 /* HeaderCollectionViewCell.swift */; };
 		4189270627CFE5E000B90F67 /* HeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4189270427CFE5E000B90F67 /* HeaderCollectionViewCell.xib */; };
+		4195B0FB27D308B4009A8408 /* BottomSheetPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195B0FA27D308B4009A8408 /* BottomSheetPracticeViewController.swift */; };
+		4195B0FF27D31F5A009A8408 /* TestFloatingPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195B0FD27D31F5A009A8408 /* TestFloatingPanelViewController.swift */; };
+		4195B10027D31F5A009A8408 /* TestFloatingPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4195B0FE27D31F5A009A8408 /* TestFloatingPanelViewController.xib */; };
 		41A6DAC427BCBB5D003F44CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */; };
 		41A6DAC627BCBB5D003F44CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */; };
 		41A6DAC827BCBB5D003F44CA /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A6DAC727BCBB5D003F44CA /* EmptyTableViewController.swift */; };
@@ -165,6 +168,9 @@
 		418926FC27CF70CF00B90F67 /* OrthogonalSectionBehaviourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrthogonalSectionBehaviourViewController.swift; sourceTree = "<group>"; };
 		4189270327CFE5E000B90F67 /* HeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		4189270427CFE5E000B90F67 /* HeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		4195B0FA27D308B4009A8408 /* BottomSheetPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPracticeViewController.swift; sourceTree = "<group>"; };
+		4195B0FD27D31F5A009A8408 /* TestFloatingPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFloatingPanelViewController.swift; sourceTree = "<group>"; };
+		4195B0FE27D31F5A009A8408 /* TestFloatingPanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFloatingPanelViewController.xib; sourceTree = "<group>"; };
 		41A6DAC027BCBB5D003F44CA /* LibraryPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A6DAC327BCBB5D003F44CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A6DAC527BCBB5D003F44CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -674,6 +680,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4195B0F827D30881009A8408 /* BottomSheetPractice */ = {
+			isa = PBXGroup;
+			children = (
+				4195B0FC27D31F35009A8408 /* View */,
+				4195B0F927D30892009A8408 /* ViewController */,
+			);
+			path = BottomSheetPractice;
+			sourceTree = "<group>";
+		};
+		4195B0F927D30892009A8408 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4195B0FA27D308B4009A8408 /* BottomSheetPracticeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4195B0FC27D31F35009A8408 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4195B0FD27D31F5A009A8408 /* TestFloatingPanelViewController.swift */,
+				4195B0FE27D31F5A009A8408 /* TestFloatingPanelViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		41A6DAB727BCBB5D003F44CA = {
 			isa = PBXGroup;
 			children = (
@@ -720,6 +752,7 @@
 			isa = PBXGroup;
 			children = (
 				41064D9B27C891DA006D260A /* Main */,
+				4195B0F827D30881009A8408 /* BottomSheetPractice */,
 				418926D727CCAEE900B90F67 /* ModernCollectionView */,
 				41064DAA27C8A73D006D260A /* CoreAnimationPractice */,
 				41064DA627C8930C006D260A /* CoreGraphicPractice */,
@@ -970,6 +1003,7 @@
 				4189270627CFE5E000B90F67 /* HeaderCollectionViewCell.xib in Resources */,
 				41064D5627C4DFEB006D260A /* DancingScript-SemiBold.ttf in Resources */,
 				418926EE27CF4F3600B90F67 /* CustomCollectionViewCell.xib in Resources */,
+				4195B10027D31F5A009A8408 /* TestFloatingPanelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,10 +1120,12 @@
 				418926ED27CF4F3600B90F67 /* CustomCollectionViewCell.swift in Sources */,
 				41064D3D27C394C4006D260A /* DesignableUiTextView.swift in Sources */,
 				418926FB27CF70B200B90F67 /* SectionBackgroundDecorationViewController.swift in Sources */,
+				4195B0FF27D31F5A009A8408 /* TestFloatingPanelViewController.swift in Sources */,
 				41064D1B27BE6F97006D260A /* Storyboard.swift in Sources */,
 				418926E327CF1EFC00B90F67 /* SimpleListViewController.swift in Sources */,
 				418926F127CF6FEE00B90F67 /* InsetItemGridViewController.swift in Sources */,
 				41064D3F27C3B0A0006D260A /* BiometricSuccessViewController.swift in Sources */,
+				4195B0FB27D308B4009A8408 /* BottomSheetPracticeViewController.swift in Sources */,
 				41A6DAF427BD0E65003F44CA /* HeroHelper.swift in Sources */,
 				41064DCB27C8C0D3006D260A /* Extension+Float.swift in Sources */,
 				41064DC127C8C0D3006D260A /* Extension+Date.swift in Sources */,

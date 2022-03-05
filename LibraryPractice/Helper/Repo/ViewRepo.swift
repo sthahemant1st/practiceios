@@ -24,6 +24,11 @@ struct ViewRepo {
             return vc
         }
         
+        static func getBottomSheetPracticeViewController() -> BottomSheetPracticeViewController {
+            let vc = Storyboard.main.viewController(BottomSheetPracticeViewController.self)
+            return vc
+        }
+        
         static func getLottieViewController() -> LottieViewController {
             let lottieVC = Storyboard.main.viewController(LottieViewController.self)
             return lottieVC
