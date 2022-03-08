@@ -27,9 +27,20 @@ class EmptyTableViewController: UIViewController,
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        
+        tableView.refreshControl = refreshControl
+        
+        
+    }
+    
+    @objc
+    private func refresh() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.data = ["nepal"]
+            self.data.append("nepal")
             self.tableView.reloadData()
+            self.tableView.refreshControl?.endRefreshing()
         }
     }
     
@@ -60,7 +71,7 @@ class EmptyTableViewController: UIViewController,
     }
     
     func emptyDataSet(_ scrollView: UIScrollView!, didTap button: UIButton!) {
-        print("you clicked me")
+        refresh()
     }
 }
 
