@@ -16,7 +16,7 @@ class LottieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Lottie"
-        
+    
         lottieView.animation = Animation.named("lottieA")
         lottieView.contentMode = .scaleAspectFit
         lottieView.loopMode = .loop
